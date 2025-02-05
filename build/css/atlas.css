@@ -1,5 +1,11 @@
 @import url(_variables.css);
 
+/*reset */
+
+* {
+    margin: 0;
+}
+
 /* colors */
 .color-base {
     color: var(--color-base);
@@ -166,7 +172,7 @@ body {
     text-decoration: var(--text-decoration-none);
 }
 
-
+h1, h2, h3, h4, h5, h6,
 .display-1,
 .display-2,
 .display-3,
@@ -178,6 +184,7 @@ body {
 .header-6 {
     line-height: var(--line-height-header);
     color: var(--color-emphasized);
+    text-wrap: balance;
 }
 
 
@@ -195,35 +202,39 @@ body {
 }
 
 /* Headers  styles */
-.header-1 {
+h1, .header-1 {
     font-size:  var(--font-size-60, 3.75rem);
 }
 
-.header-2 {
+h2, .header-2 {
     font-size: var(--font-size-48, 3rem);
 }
 
-.header-3 {
+h3, .header-3 {
     font-size: var(--font-size-40, 2.5rem);
 }
 
-.header-4 {
+h4, .header-4 {
     font-size: var(--font-size-32, 2rem);
 }
 
-.header-5 {
+h5, .header-5 {
     font-size: var(--font-size-24, 1.5rem);
 }
 
-.header-6 {
+h6, .header-6 {
     font-size: var(--font-size-20, 1.25rem);
 }
 
 /* Body styles */
+p, caption,
 .body-lg,
 .body-md,
 .body-sm {
     line-height: var(--line-height-paragraph, 1.4);
+    color: var(--color-base);
+    text-wrap: pretty;
+    max-width: 75ch;
     color: var(--color-base);
 }
 
@@ -231,11 +242,11 @@ body {
     font-size: var(--font-size-24, 1.5rem);
 }
 
-.body-md {
+p .body-md {
     font-size: var(--font-size-16, 1rem);
 }
 
-.body-sm {
+caption, .body-sm {
     font-size: var(--font-size-12);
 }
 
