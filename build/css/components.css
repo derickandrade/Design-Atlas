@@ -2,6 +2,7 @@
 
 :root {
     --icon-check: url("data:image/svg+xml,%3Csvg width='1.25rem' height='1.25rem' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_1459_1729' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1459_1729)'%3E%3Cpath d='M8.33336 10.9167L13.0834 6.16671C13.3472 5.90282 13.6354 5.77087 13.9479 5.77087C14.2604 5.77087 14.5486 5.90282 14.8125 6.16671C15.0764 6.4306 15.2084 6.72226 15.2084 7.04171C15.2084 7.36115 15.0764 7.65282 14.8125 7.91671L9.20836 13.5417C8.95836 13.7917 8.66322 13.9167 8.32294 13.9167C7.98266 13.9167 7.68752 13.7917 7.43752 13.5417L5.16669 11.2709C4.9028 11.007 4.77433 10.7153 4.78127 10.3959C4.78822 10.0764 4.92363 9.78476 5.18752 9.52087C5.45141 9.25699 5.74308 9.12504 6.06252 9.12504C6.38197 9.12504 6.67363 9.25699 6.93752 9.52087L8.33336 10.9167Z' fill='white'/%3E%3C/g%3E%3C/svg%3E");
+    --chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' viewBox='0 0 24 25' fill='none'%3E%3Cmask id='mask0_1510_28' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='24' height='25'%3E%3Crect y='0.800049' width='24' height='24' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1510_28)'%3E%3Cpath d='M11.9996 15.2501L19.3496 7.9001C19.5996 7.6501 19.8913 7.52926 20.2246 7.5376C20.558 7.54593 20.8496 7.6751 21.0996 7.9251C21.3496 8.1751 21.4746 8.46676 21.4746 8.8001C21.4746 9.13343 21.3496 9.4251 21.0996 9.6751L13.4246 17.3751C13.2246 17.5751 12.9996 17.7251 12.7496 17.8251C12.4996 17.9251 12.2496 17.9751 11.9996 17.9751C11.7496 17.9751 11.4996 17.9251 11.2496 17.8251C10.9996 17.7251 10.7746 17.5751 10.5746 17.3751L2.87462 9.6751C2.62462 9.4251 2.50379 9.12926 2.51212 8.7876C2.52046 8.44593 2.64962 8.1501 2.89962 7.9001C3.14962 7.6501 3.44129 7.5251 3.77462 7.5251C4.10796 7.5251 4.39962 7.6501 4.64962 7.9001L11.9996 15.2501Z' fill='%237C7C7C'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -9,6 +10,77 @@
     --icon-check: url("data:image/svg+xml,%3Csvg width='1.25rem' height='1.25rem' viewBox='0 0 20 20' fill='var(--color-inverse)' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_1459_1729' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='20' height='20'%3E%3Crect width='20' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_1459_1729)'%3E%3Cpath d='M8.33336 10.9167L13.0834 6.16671C13.3472 5.90282 13.6354 5.77087 13.9479 5.77087C14.2604 5.77087 14.5486 5.90282 14.8125 6.16671C15.0764 6.4306 15.2084 6.72226 15.2084 7.04171C15.2084 7.36115 15.0764 7.65282 14.8125 7.91671L9.20836 13.5417C8.95836 13.7917 8.66322 13.9167 8.32294 13.9167C7.98266 13.9167 7.68752 13.7917 7.43752 13.5417L5.16669 11.2709C4.9028 11.007 4.77433 10.7153 4.78127 10.3959C4.78822 10.0764 4.92363 9.78476 5.18752 9.52087C5.45141 9.25699 5.74308 9.12504 6.06252 9.12504C6.38197 9.12504 6.67363 9.25699 6.93752 9.52087L8.33336 10.9167Z' fill='%231C1B1F'/%3E%3C/g%3E%3C/svg%3E");
     }
 }
+/*accordion */
+.atl-accordion {
+    height: fit-content;
+    width: 100%;
+    max-width: var(--size-600);
+    border-radius: var(--border-radius-8);
+    border: var(--border-width-04) solid var(--border-color-subtle);
+    background: var(--bgn-surface);
+
+
+    details { 
+        summary, .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            flex-shrink: 0;
+            padding: var(--spacing-16);
+            font-size: var(--font-size-16);
+            font-weight: var(--font-weight-semibold);
+            line-height: var(--line-height-paragraph);
+            color: var(--color-emphasized);
+            border-bottom: var(--border-width-04) solid var(--border-color-subtle);
+            list-style: none;   
+            
+            
+            
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: var(--size-24);
+                height: var(--size-24);
+                background-image: var(--chevron);
+                background-size: cover;
+
+            }
+
+            &:hover {
+                background-color: var(--bgn-surface-hover);
+                color: var(--color-base-hover);
+
+            }
+        }
+
+        &[open] summary::after {
+            rotate: 180deg;
+        }
+
+        &:first-child > summary {
+            border-radius: var(--border-radius-8) var(--border-radius-8) 0 0;
+        }
+
+        &:last-child > summary {
+            border-radius: 0 0 var(--border-radius-8) var(--border-radius-8);
+            border: none;
+        }
+
+    .content {
+        padding: var(--spacing-16) var(--spacing-16) var(--spacing-24) var(--spacing-16);
+        border-bottom: var(--border-width-04) solid var(--border-color-subtle);
+        transition: width 0.35s ease;
+    }
+
+    &:last-child > .content {
+        border-bottom: none;
+        border-top: var(--border-width-04) solid var(--border-color-subtle);;
+    }
+
+    }
+
+}
+
 /* style for buttons */
 .atl-button { 
     display: inline-flex;
