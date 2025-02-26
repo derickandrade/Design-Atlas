@@ -1,58 +1,56 @@
-# create-svelte
+![Cover of Atlas design system for OpenStreetMap aplications](/Cover.png)
+# Atlas Design System
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Welcome to the **Atlas Design System** for OpenStreetMap! This project aims to provide a consistent and scalable foundation for creating user interfaces aligned with OpenStreetMap's visual identity and principles. Here, you'll find Design Tokens, Components, Icons, Resources, and guidelines for usage and contributions.
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+## Design Tokens
+Design Tokens are the foundation of our design system. They define colors, typography, spacing, borders, and other visual properties to ensure consistency across all products and platforms.
 
-## Creating a project
+- **Colors**: Primary, secondary, and neutral color palettes.
+- **Typography**: Fonts, sizes, and weights.
+- **Spacing**: Margins, paddings, and grids.
+- **Borders and Shadows**: Border styles and shadow effects.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Components and Icons
+Our library of components and icons is designed to be modular and reusable, ensuring a cohesive user experience.
 
-```bash
-# create a new project in the current directory
-npx sv create
+- **Components**: Buttons, forms, cards, modals, navigation, and more.
+- **Icons**: We currently use [**Material Symbols**](https://fonts.google.com/icons) as our icon library.
 
-# create a new project in my-app
-npx sv create my-app
-```
+## Resources
+Here, you'll find additional resources to help with the implementation and understanding of the Design System.
 
-## Developing
+- [**Figma Library**](https://www.figma.com/design/2vheURjyvYg2oyBeuQOxQ1/Atlas---Design-System?node-id=458-2470&t=831K8B3NnQoe1vdt-1): Component and style library in Figma.
+- **Documentation**: Detailed guides on how to use and customize components.
+- **Usage Examples**: Practical implementation examples.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Usage and Contributions
+We want the OpenStreetMap Design System to be a useful tool for everyone. Here are some ways to start using and contributing to the project.
 
-```bash
-npm run dev
+### How to Use
+1. Install the Design System package in your project.
+2. Import the necessary components and tokens.
+3. Follow the usage guidelines to ensure consistency.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+### How to Contribute
+1. Fork the repository.
+2. Create a branch for your contribution.
+3. Submit a pull request with your changes.
+4. Follow our contribution guidelines to ensure your contribution is accepted.
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+## Maintainers
+Atlas is maintained by a diverse group of designers and developers, with support from the **University of Brasília**, the **Federal University of Espírito Santo**, and the OpenStreetMap volunteer community.
 
-## Building
+## Contact Us
+If you have questions, suggestions, or need assistance, feel free to reach out to us:
 
-To build your library:
+- **Discord**: [Design System Discord Channel](link)
+- **GitHub Issues**: [Open an Issue](link)
 
-```bash
-npm run package
-```
+## Guiding Principles
+Our Design System is guided by the following core principles:
 
-To create a production version of your showcase app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+1. **Consistency**: Ensure a cohesive user experience across all products.
+2. **Accessibility**: Prioritize accessibility in all components and guidelines.
+3. **Modularity**: Create reusable and scalable components.
+4. **Transparency**: Maintain an open and transparent process for contributions and feedback.
