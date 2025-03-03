@@ -1,7 +1,9 @@
 /**
  * Do not edit directly, this file was auto-generated.
  */
-
+ html {
+  color-scheme: light dark;
+}
  :root {
 
     /* colors */

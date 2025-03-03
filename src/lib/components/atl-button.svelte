@@ -13,7 +13,7 @@
   let {
     type = "button",
     disabled = false,
-    variant = "tertiary",
+    variant = "",
     withIcon = false,
     children
   } = $props();
