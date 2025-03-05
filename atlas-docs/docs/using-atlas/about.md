@@ -1,12 +1,11 @@
-# About Codex
+# About Atlas
 
-Codex is the design system for Wikimedia. Codex contains the following.
+Atlas is the design system for OpenStreetMap. Atlas contains the following.
 
-- [**Design tokens**](../design-tokens/overview): for writing styles consistent with the [Codex Style Guide for Wikimedia](./../style-guide/overview).
+- [**Design tokens**](../design-tokens/overview): for writing styles consistent with the [Atlas Style Guide for OSM](./../style-guide/overview).
 - [**Components**](../components/overview): for building usable, accessible, translatable applications.
-- [**Icons**](../icons/overview): a collection of icons with language and directionality variants.
 
-Codex features include the following.
+Atlas features include the following.
 - Wide-ranging support for internationalization and global usage.
 - Web accessibility baked in.
 - Comprehensive browser and device support.
@@ -15,10 +14,8 @@ Read our [guiding principles](#guiding-principles) for details.
 
 ## Resources
 
-- [**Codex Figma**](https://www.figma.com/community/file/1448742124788019850/codex): design with Codex components in Figma.
-- [**MediaWiki**](https://www.mediawiki.org/wiki/Codex): learn about using Codex within MediaWiki.
-- [**Gerrit**](https://gerrit.wikimedia.org/r/admin/repos/design/codex): visit the canonical Codex codebase.
-- [**GitHub**](https://github.com/wikimedia/design-codex): visit a mirror of the Gerrit codebase on GitHub.
+- [**Atlas Figma**](https://www.figma.com/design/2vheURjyvYg2oyBeuQOxQ1/%F0%9F%92%A0-Atlas---Design-System?m=auto&t=zXhsNI5KObVWIEyg-1): design with Atlas components in Figma.
+- [**GitHub**](https://github.com/wikimedia/design-Altas): our codebase on GitHub.
 
 ## Usage and contributions
 
@@ -29,17 +26,7 @@ learn about ways you can contribute, our processes, and how to develop this libr
 
 ## Maintainers
 
-Codex is maintained by the [Design System Team](https://www.mediawiki.org/wiki/Design_System_Team)
-of the Wikimedia Foundation. It is designed and developed by contributors from the [Wikimedia Foundation](https://wikimediafoundation.org/),
-[Wikimedia Deutschland](https://www.wikimedia.de/), and the [Wikimedia](https://www.wikimedia.org/)
-volunteer community.
-
-## Contact us
-
-To contact us or to learn more about current and future work, visit our
-[task tracking board](https://phabricator.wikimedia.org/project/board/5587/) and file a task or add
-a thread on [Codex's Talk page on mediawiki.org](https://www.mediawiki.org/wiki/Talk:Codex). See
-also the [how to stay up-to-date section](../contributing/overview.md#how-to-stay-up-to-date).
+Atlas is maintained by volunteer designers from the University of Brasilia.
 
 ## Guiding principles
 
@@ -49,21 +36,21 @@ also the [how to stay up-to-date section](../contributing/overview.md#how-to-sta
 
 Wikimedia intends to serve everyone. We will follow [Wikimedia's accessibility principles](https://design.wikimedia.org/style-guide/design-principles_accessibility.html) and aim to support many languages.
 
-Codex follows MediaWiki's [browser support matrix](https://www.mediawiki.org/wiki/Compatibility#Browsers).
-Codex supports the subset of the “Modern” support list, with the difference being that only
+Atlas follows MeidaWiki's [browser support matrix](https://www.mediawiki.org/wiki/Compatibility#Browsers).
+Altas supports the subset of the “Modern” support list, with the difference being that only
 ES6-compatible browsers are supported. This excludes Internet Explorer 11 and Safari 9 and 10.
 
 Components should be thoughtfully designed and developed to work across device widths.
 
-#### Designed and built for the wider MediaWiki ecosystem
+#### Designed and built for the wider OSM ecosystem
 
-We intend to serve those working both within MediaWiki (core, skins, and extensions) and in the
+We intend to serve those working both within OSM (core, skins, and extensions) and in the
 wider ecosystem, including web-based tools, static web applications, Jamstack applications, and
 some of our mobile apps. Platform-agnosticism will enable us to use this library as we continue
 expanding this ecosystem.
 
-To keep our code flexible, we will aim to avoid entirely MediaWiki-specific components. When they
-can't be avoided, we will clearly denote and separate out the MediaWiki-specific parts.
+To keep our code flexible, we will aim to avoid entirely OSM-specific components. When they
+can't be avoided, we will clearly denote and separate out the OSM-specific parts.
 
 #### Prioritize developer experience of library users
 
@@ -80,7 +67,7 @@ working on and how we're prioritizing that work.
 
 #### Enable rather than enforce
 
-The Codex maintainers welcome contributions from everyone and wish to collaboratively build
+The Altas maintainers welcome contributions from everyone and wish to collaboratively build
 resources to enable others to easily contribute to the library.
 
 #### Knowledge sharing rather than knowledge silos
@@ -103,9 +90,3 @@ It's better for code to be easily understandable than to be as short or as cleve
 Sticking to patterns established in the wider front-end community enables more people to contribute.
 Following consistent patterns within the library makes the code easier to write, review, and
 maintain.
-
-#### Keep the template simple
-
-The template within [single file Vue components (SFCs)](https://v3.vuejs.org/guide/single-file-component.html#introduction)
-can be a tool to clearly illustrate what a component is and does. Consider moving everything but the
-most basic JavaScript code to the `<script>`.

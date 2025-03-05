@@ -61,19 +61,6 @@ export default {
           text: 'Architecture Decisions',
           items: [
             { text: 'Overview', link: '/using-codex/adrs/overview' },
-            { text: 'ADR 1 - Design Tokens', link: '/using-codex/adrs/01-adr-design-tokens' },
-            { text: 'ADR 2 - Demo tool', link: '/using-codex/adrs/02-adr-demo-tool' },
-            { text: 'ADR 3 - String types in TypeScript', link: '/using-codex/adrs/03-adr-string-types' },
-            { text: 'ADR 4 - Visual Styles as Less Mixins', link: '/using-codex/adrs/04-adr-less-mixins' },
-            { text: 'ADR 5 - CSS Components', link: '/using-codex/adrs/05-adr-css-components' },
-            { text: 'ADR 6 - Field Component', link: '/using-codex/adrs/06-adr-field-component' },
-            { text: 'ADR 7 - FloatingUI', link: '/using-codex/adrs/07-adr-floating-ui' },
-            { text: 'ADR 8 - Alternate Color Modes', link: '/using-codex/adrs/08-adr-color-modes' },
-            { text: 'ADR 9 - CSS Icons', link: '/using-codex/adrs/09-adr-css-icons' },
-            { text: 'ADR 10 - i18n support', link: '/using-codex/adrs/10-adr-i18n-for-common-strings' },
-            { text: 'ADR 11 - Codex PHP', link: '/using-codex/adrs/11-adr-codex-php' },
-            { text: 'ADR 12 - Native constraint validation', link: '/using-codex/adrs/12-adr-native-constraint-validation' },
-            { text: 'ADR 13 - Alternate Font Modes', link: '/using-codex/adrs/13-adr-font-modes' }
           ]
         }
       ],
@@ -90,7 +77,6 @@ export default {
             { text: 'Designing tokens', link: '/contributing/designing-tokens' },
             { text: 'Designing new components', link: '/contributing/designing-new-components' },
             { text: 'Redesigning existing components', link: '/contributing/redesigning-existing-components' },
-            { text: 'Designing icons', link: '/contributing/designing-icons' }
           ]
         },
         {
@@ -99,9 +85,7 @@ export default {
             { text: 'Introduction', link: '/contributing/contributing-code/introduction' },
             { text: 'Developing components', link: '/contributing/contributing-code/developing-components' },
             { text: 'Testing components', link: '/contributing/contributing-code/testing-components' },
-            { text: 'Component demos', link: '/contributing/contributing-code/component-demos' },
-            { text: 'Working with TypeScript', link: '/contributing/contributing-code/typescript' },
-            { text: 'Adding new icons', link: '/contributing/contributing-code/adding-new-icons' }
+            { text: 'Component demos', link: '/contributing/contributing-code/component-demos' }
           ]
         }
       ],
@@ -123,7 +107,7 @@ export default {
         {
           text: 'Visual Styles',
           items: [
-            { text: 'Colors', link: '/style-guide/colors' },
+            { text: 'Theme', link: '/style-guide/theme' },
             { text: 'Typography', link: '/style-guide/typography' },
             { text: 'Icons', link: '/style-guide/icons' },
             { text: 'Images', link: '/style-guide/images' },
@@ -169,7 +153,7 @@ export default {
             { text: 'Box-shadow', link: '/design-tokens/box-shadow' },
             { text: 'Box-sizing', link: '/design-tokens/box-sizing' },
             { text: 'Breakpoint', link: '/design-tokens/breakpoint' },
-            { text: 'Color', link: '/design-tokens/color' },
+            { text: 'Colors', link: '/design-tokens/colors' },
             { text: 'Cursor', link: '/design-tokens/cursor' },
             { text: 'Font', link: '/design-tokens/font' },
             { text: 'Opacity', link: '/design-tokens/opacity' },

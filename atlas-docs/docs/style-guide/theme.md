@@ -1,6 +1,6 @@
 # Theme
 
-For documentation on the entire color palette, visit [Colors](colors.md).
+For documentation on the entire color palette, visit [Colors](/design-tokens/colors.md).
 
 :::tip
 Some colors vary between light and dark modes. Use the color mode switcher in the site header to see
@@ -64,7 +64,12 @@ Color tokens applied to borders on form items and buttons
 | <div class="example border" style="border-color: var(--border-color-info);"></div>       | <span class="token">border-color-info</span>       | <span class="token"></span>  |
 | <div class="example border" style="border-color: var(--border-color-success);"></div>    | <span class="token">border-color-success</span>    | <span class="token"></span>  |
 | <div class="example border" style="border-color: var(--border-color-warning);"></div>    | <span class="token">border-color-warning</span>    | <span class="token"></span>  |
-| <div class="example border" style="border-color: var(--border-color-error);"></div>      | <span class="tokatlas-docs/docs/style-guide/_variables.css
+| <div class="example border" style="border-color: var(--border-color-error);"></div>      | <span class="token">border-color-error</span>      | <span class="token"></span>  |
+
+<style>
+
+
+    @import url(_variables.css);
         .example {
             width: 3rem;
             height: 3rem;
