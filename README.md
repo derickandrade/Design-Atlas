@@ -54,3 +54,7 @@ Our Design System is guided by the following core principles:
 2. **Accessibility**: Prioritize accessibility in all components and guidelines.
 3. **Modularity**: Create reusable and scalable components.
 4. **Transparency**: Maintain an open and transparent process for contributions and feedback.
+
+## Inspirations
+This project was inspired by [Wikimedia's Codex](https://doc.wikimedia.org/codex/latest/), an open-source design system developed by the Wikimedia Foundation. 
+Many of the guidelines and Design Tokens in this Design System were adapted or reused from Codex.

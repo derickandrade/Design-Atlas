@@ -12,8 +12,6 @@ export default {
         items: [
           { text: 'Design tokens', link: '/design-tokens/overview', activeMatch: '/design-tokens/' },
           { text: 'Components', link: '/components/overview', activeMatch: '/components/' },
-          { text: 'Icons', link: '/icons/overview', activeMatch: '/icons/' },
-          { text: 'Composables', link: '/composables/overview', activeMatch: '/composables/' }
         ] 
       }
     ],
@@ -61,7 +59,7 @@ export default {
         {
           text: 'Architecture Decisions',
           items: [
-            { text: 'Overview', link: '/using-codex/adrs/overview' },
+            { text: 'Overview', link: '/using-atlas/adrs/overview' },
           ]
         }
       ],
@@ -130,12 +128,6 @@ export default {
             { text: 'Writing for copy', link: '/style-guide/writing-for-copy' },
             { text: 'Additional resources', link: '/style-guide/additional-resources' }
           ]
-        },
-        {
-          text: 'Platforms',
-          items: [
-            { text: 'Wikipedia Apps', link: '/style-guide/wikipedia-apps' }
-          ]
         }
       ],
       '/design-tokens/': [
@@ -149,21 +141,14 @@ export default {
         {
           text: '',
           items: [
-            { text: 'Animation', link: '/design-tokens/animation' },
             { text: 'Border', link: '/design-tokens/border' },
             { text: 'Box-shadow', link: '/design-tokens/box-shadow' },
-            { text: 'Box-sizing', link: '/design-tokens/box-sizing' },
-            { text: 'Breakpoint', link: '/design-tokens/breakpoint' },
             { text: 'Colors', link: '/design-tokens/colors' },
             { text: 'Cursor', link: '/design-tokens/cursor' },
             { text: 'Font', link: '/design-tokens/font' },
             { text: 'Opacity', link: '/design-tokens/opacity' },
-            { text: 'Outline', link: '/design-tokens/outline' },
-            { text: 'Position', link: '/design-tokens/position' },
             { text: 'Size', link: '/design-tokens/size' },
-            { text: 'Spacing', link: '/design-tokens/spacing' },
-            { text: 'Transition', link: '/design-tokens/transition' },
-            { text: 'Z-Index', link: '/design-tokens/z-index' }
+            { text: 'Spacing', link: '/design-tokens/spacing' }
           ]
         }
       ],
@@ -171,94 +156,36 @@ export default {
         {
           text: 'Components',
           items: [
-            { text: 'Overview', link: '/components/overview' },
-            { text: 'Types and constants', link: '/components/types-and-constants' }
+            { text: 'Overview', link: '/components/overview' }
           ]
         },
         {
           text: '',
           items: [
-            {
-              text: 'Buttons',
-              collapsed: true,
-              items: [
-                { text: 'Button', link: '/components/demos/button' },
-                { text: 'ButtonGroup', link: '/components/demos/button-group' },
-                { text: 'MenuButton', link: '/components/demos/menu-button' },
-                { text: 'ToggleButton', link: '/components/demos/toggle-button' },
-                { text: 'ToggleButtonGroup', link: '/components/demos/toggle-button-group' }
-              ]
-            },
-            {
-              text: 'Form elements',
-              collapsed: true,
-              items: [
-                { text: 'Checkbox', link: '/components/demos/checkbox' },
-                { text: 'ChipInput', link: '/components/demos/chip-input' },
-                { text: 'Combobox', link: '/components/demos/combobox' },
-                { text: 'Field', link: '/components/demos/field' },
-                { text: 'Label', link: '/components/demos/label' },
-                { text: 'Lookup', link: '/components/demos/lookup' },
-                { text: 'MultiselectLookup', link: '/components/demos/multiselect-lookup' },
-                { text: 'Radio', link: '/components/demos/radio' },
-                { text: 'Select', link: '/components/demos/select' },
-                { text: 'TextArea', link: '/components/demos/text-area' },
-                { text: 'TextInput', link: '/components/demos/text-input' },
-                { text: 'ToggleSwitch', link: '/components/demos/toggle-switch' }
-              ]
-            },
-            {
-              text: 'Content & data',
-              collapsed: true,
-              items: [
-                { text: 'Accordion', link: '/components/demos/accordion' },
-                { text: 'Card', link: '/components/demos/card' },
-                { text: 'Dialog', link: '/components/demos/dialog' },
-                { text: 'Menu', link: '/components/demos/menu' },
-                { text: 'MenuItem', link: '/components/demos/menu-item' },
-                { text: 'Popover', link: '/components/demos/popover' },
-                { text: 'Table', link: '/components/demos/table' },
-                { text: 'Tooltip', link: '/components/directives/tooltip' }
-              ]
-            },
-            {
-              text: 'Feedback',
-              collapsed: true,
-              items: [
-                { text: 'InfoChip', link: '/components/demos/info-chip' },
-                { text: 'Message', link: '/components/demos/message' },
-                { text: 'ProgressBar', link: '/components/demos/progress-bar' }
-              ]
-            },
-            {
-              text: 'Media',
-              collapsed: true,
-              items: [
-                { text: 'Icon', link: '/components/demos/icon' },
-                { text: 'Image', link: '/components/demos/image' },
-                { text: 'Thumbnail', link: '/components/demos/thumbnail' }
-              ]
-            },
-            {
-              text: 'Navigation',
-              collapsed: true,
-              items: [
-                { text: 'Link', link: '/components/mixins/link' },
-                { text: 'Tabs', link: '/components/demos/tabs' },
-                { text: 'Tab', link: '/components/demos/tab' }
-              ]
-            },
-            {
-              text: 'Search',
-              collapsed: true,
-              items: [
-                { text: 'SearchInput', link: '/components/demos/search-input' },
-                { text: 'TypeaheadSearch', link: '/components/demos/typeahead-search' }
-              ]
-            }
-          ]
-        }
-      ],
+              { text: 'Accordion', link: '/components/demos/accordion' },
+              { text: 'Anchor', link: '/components/demos/anchor' },
+              { text: 'Alert', link: '/components/demos/alert' },
+              { text: 'Bagdes', link: '/components/demos/bagdes' },
+              { text: 'Buttons', link: '/components/demos/buttons' },
+              { text: 'Button-Group', link: '/components/demos/button-group' },
+              { text: 'Checkbox', link: '/components/demos/checkbox' },
+              { text: 'Chip', link: '/components/demos/chip' },
+              { text: 'Field', link: '/components/demos/field' },
+              { text: 'Input', link: '/components/demos/input' },
+              { text: 'HR', link: '/components/demos/hr' },
+              { text: 'Links', link: '/components/demos/links' },
+              { text: 'Menu', link: '/components/demos/menu' },
+              { text: 'Modals', link: '/components/demos/modals' },
+              { text: 'Pagination', link: '/components/demos/pagination' },
+              { text: 'Radio Buttons', link: '/components/demos/radio-buttons' },
+              { text: 'Select', link: '/components/demos/select' },
+              { text: 'Switch', link: '/components/demos/switch' },
+              { text: 'Tab', link: '/components/demos/tab' },
+              { text: 'Text-Area', link: '/components/demos/text-area' },
+              { text: 'Tooltips', link: '/components/demos/tooltips' },
+      ]
+    }
+  ],
       '/icons/': [
         {
           text: 'Icons',

@@ -90,3 +90,7 @@ It's better for code to be easily understandable than to be as short or as cleve
 Sticking to patterns established in the wider front-end community enables more people to contribute.
 Following consistent patterns within the library makes the code easier to write, review, and
 maintain.
+
+## Inspirations
+This project was inspired by [Wikimedia's Codex](https://doc.wikimedia.org/codex/latest/), an open-source design system developed by the Wikimedia Foundation. 
+Many of the guidelines and Design Tokens in this Design System were adapted or reused from Codex.

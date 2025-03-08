@@ -26,3 +26,8 @@ features:
     title: Pronto para Produção
     details: Otimizado para deploy em qualquer ambiente.
 ---
+
+
+-----
+This project was inspired by [Wikimedia's Codex](https://doc.wikimedia.org/codex/latest/), an open-source design system developed by the Wikimedia Foundation. 
+Many of the guidelines and Design Tokens in this Design System were adapted or reused from Codex.
