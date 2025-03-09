@@ -4,7 +4,7 @@ export default {
   description: 'Atlas design system for OSM',
   themeConfig: {
     nav: [
-      { text: 'Using Atlas', link: '/using-atlas/about', activeMatch: '/using-codex/' },
+      { text: 'Using Atlas', link: '/using-atlas/about', activeMatch: '/using-atlas/' },
       { text: 'Contributing', link: '/contributing/overview', activeMatch: '/contributing/' },
       { text: 'Style Guide', link: '/style-guide/overview', activeMatch: '/style-guide/' },
       { 

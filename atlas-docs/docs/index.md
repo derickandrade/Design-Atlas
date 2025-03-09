@@ -5,7 +5,7 @@ hero:
   name: Atlas
   text: Design System for OpenStreetMap.
   image:
-    src: /logo.png
+    src: /assets/Logo_design.svg
     alt: Logo do Projeto
   actions:
     - theme: brand
