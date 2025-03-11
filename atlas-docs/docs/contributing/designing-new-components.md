@@ -39,7 +39,7 @@ This initial inventory-like process should allow designers to identify the visua
 
 Create a new Figma file to explore the different proposals and versions of the new component, so you can share them in the GitHub issue. You can duplicate this [component exploration template](https://www.figma.com/design/hPQotZwof0YmH68SQDosXx/Component-specs-sheets?m=auto&t=TkiBxNogE37xBPT5-1) to create your own file.
 
-![A new exploration file in Figma.](../assets/designing-new-components/design-component-create-exploration-file.png)
+![A new exploration file in Figma.]()
 
 The following information will be included in the design exploration file:
 
@@ -58,16 +58,16 @@ It is essential to identify the new component’s architecture before diving dee
 
 1. The component is built as a combination of elements with their own styles, but exists as a single element (e.g. Button).
 
-![Component architecture scenario 1](../assets/designing-new-components/defining-styles-component-scenarios-01.png)
+![Component architecture scenario 1]()
 
 2. The component is built as a composite of different components that already exist (e.g. Combobox, which combines an input and a button).
 
 
-![Component architecture scenario 2](../assets/designing-new-components/defining-styles-component-scenarios-02.png)
+![Component architecture scenario 2]()
 
 3. The component is built as a composite of different components, one or more of which haven’t been designed or implemented yet (e.g. Card, which includes a Thumbnail component that requires its own specifications and implementation process).
 
-![Component architecture scenario 3](../assets/designing-new-components/defining-styles-component-scenarios-03.png)
+![Component architecture scenario 3]()
 
 
 The latter scenario will require you to follow the steps of the design process outlined in this section to **create each one of the individual building blocks** that make up the new component: each sub-component will require the same level of attention, its own exploration file and individual specification sheet. Sub-components will require **dedicated component issues**, and also be added to the design components library separately.
@@ -116,7 +116,7 @@ Figma provides extensive [resources](https://help.figma.com/hc/en-us) that will 
 
 Once the component’s visual style and interactive behavior have been defined in the main component, the component specification sheet will need to be created in order to document the component’s behavior. This spec sheet will serve as the foundation for the component's documentation and guide developers in implementing the component. You can use the [component specification sheet template](https://www.figma.com/design/hPQotZwof0YmH68SQDosXx/Component-specs-sheets?m=auto&t=c7iaBtIQmPo56nsG-1) that’s available in the Figma exploration file.
 
-![Specification sheet template in Figma.](../assets/designing-new-components/design-component-figma-spec.png)
+![Specification sheet template in Figma.]()
 
 The component specification sheet needs to contain the following sections:
 
@@ -159,7 +159,7 @@ A general recommendation is to test components in a realistic context that simul
 
 After completing the component specification sheet, duplicate this [Google Doc template](https://docs.google.com/document/d/1oVTtBk7ShOKj80dz3CYsd09sC9gBbfpbJ8M_E1zdm6c/edit#heading=h.a76x583bwhh3) to document the component’s guidelines.
 
-![Google Doc template to document the component's guidelines.](../assets/designing-new-components/design-component-guidelines.png)
+![Google Doc template to document the component's guidelines.]()
 
 Follow the sections outlined in the template to structure the guidelines, which will be added to the component's page on the Atlas site. You can use the frames designed in the Figma spec sheet as images to illustrate these guidelines.
 
