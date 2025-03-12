@@ -39,7 +39,7 @@ Designers will start creating an initial inventory with the relevant use cases w
 
 Designers will need to add both option and decision tokens in their respective specifications sheets. Option tokens consume “raw” values (e.g. `#57814c`), and usually have more abstract names (e.g. `olive-500`). The names of decision tokens should express their intended use (e.g. `color-accent`). They consume option tokens as values. Learn more about the different [token typologies](../design-tokens/definition-and-structure.md).
 
-![theme style sheet example](../assests/theme.png)
+![theme style sheet example](../assets/theme.png)
 
 Make sure that both option and decision tokens fit within the existing value scale. Apply the value of the token to its “swatch” in Figma in order to showcase the new style. Also, make sure to use the right naming, which might depend on the token’s category.
 

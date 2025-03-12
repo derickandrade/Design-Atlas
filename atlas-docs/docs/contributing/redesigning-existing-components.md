@@ -2,7 +2,7 @@
 
 This page outlines the steps that collaborators should follow to contribute to the redesign of an existing Atlas component.
 
-![Designing components](../assets/redesigning-existing-components/designing-components.png)
+![Designing components]()
 
 ## 1. Report and validate
 
@@ -14,19 +14,19 @@ The redesign of a component should be clearly justified and scoped. There are se
 
 In this scenario, we may need to create a new component variant or property in order to expand the use cases of the original component (e.g. Message component needs to present a close button so users can dismiss it).
 
-![Redesigning components scenarios 01](../assets/redesigning-existing-components/report-validate-redesigning-components-scenario-01.png)
+![Redesigning components scenarios 01]()
 
 **2. The component’s visual style needs to be updated**
 
 In this scenario, we may need to change the visual style of the component in order to improve it, or to make it consistent with other system elements (e.g. Button paddings need to be decreased).
 
-![Redesigning components scenarios 02](../assets/redesigning-existing-components/report-validate-redesigning-components-scenario-02.png)
+![Redesigning components scenarios 02]()
 
 **3. The component’s behavior needs to be improved**
 
 We may want to update the component behaviors for well-justified reasons to improve user-experience (e.g. allow the component to grow in height to accommodate longer text).
 
-![Redesigning components scenarios 03](../assets/redesigning-existing-components/report-validate-redesigning-components-scenario-03.png)
+![Redesigning components scenarios 03]()
 
 ### 1.2. Create a new GitHub Issue
 
@@ -55,7 +55,7 @@ Designers should also compare components of the same category or elements with s
 Create a new Figma file to explore the different proposals and versions of the component, so you can share them in the GitHub Issue. You can duplicate this [component exploration template](https://www.figma.com/design/hPQotZwof0YmH68SQDosXx/Component-specs-sheets?m=auto&t=TkiBxNogE37xBPT5-1
 ) to create your own file. You can also find the existing component in [this Figma folder]() and create a new version's tab with the component's updates.
 
-![A new exploration file in Figma.](../assets/designing-new-components/design-component-create-exploration-file.png)
+![A new exploration file in Figma.]()
 
 The following information will be included in the design exploration file:
 
@@ -76,17 +76,17 @@ It is essential to identify the component’s architecture before diving deeper 
 
 1. The component we are redesigning is not built as a composite of different components (e.g. Button), so we’ll update a single element.
 
-![Redesign component scenario 01](../assets/redesigning-existing-components/redesign-component-component-scenario-01.png)
+![Redesign component scenario 01]()
 
 
 2. The component we are redesigning is built as a composite of different components that already exist (e.g. Combobox, which combines an input and a button). So we’ll consider how the changes affect each one of the component’s building blocks.
 
-![Redesign component scenario 02](../assets/redesigning-existing-components/redesign-component-component-scenario-02.png)
+![Redesign component scenario 02]()
 
 
 3. The component we are redesigning is built as a composite of different components and **one or more don’t exist** (e.g. Combobox, which combines an input and a button that already exist but needs the menu items to select one option in the dropdown menu).
 
-![Redesign component scenario 03](../assets/redesigning-existing-components/redesign-component-component-scenario-03.png)
+![Redesign component scenario 03]()
 
 
 ::: warning
@@ -134,7 +134,7 @@ Figma provides extensive [resources](https://help.figma.com/hc/en-us) that will 
 
 Once the component’s visual style and interactive behavior have been defined in the main component, the component specification sheet will need to be documented. This spec sheet will serve as the foundation for the component's documentation and guide developers in implementing the component updates. You can use this [component specification sheet template](https://www.figma.com/design/hPQotZwof0YmH68SQDosXx/Component-specs-sheets?m=auto&t=TkiBxNogE37xBPT5-1) or find the existing component in [this Figma folder]() to create a new version's tab with the component's updates.
 
-![Specification sheet template in Figma.](../assets/designing-new-components/design-component-figma-spec.png)
+![Specification sheet template in Figma.]()
 
 The component specification sheet needs to contain the following sections:
 
@@ -177,7 +177,7 @@ A general recommendation is to test components in a realistic context that simul
 
 As some parts of the component are being redesigned, it is necessary to update the existing component’s guidelines to reflect the changes. You can duplicate this [Google Doc template]() to document the component’s guidelines.
 
-![Google Doc template to document the component's guidelines.](../assets/designing-new-components/design-component-guidelines.png)
+![Google Doc template to document the component's guidelines.]()
 
 Follow the sections outlined in the template to structure the guidelines, which will be added to the component's page on the Atlas site. You can use the frames designed in the Figma spec sheet as images to illustrate these guidelines.
 

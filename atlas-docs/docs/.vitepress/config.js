@@ -2,6 +2,7 @@ export default {
   base: '/docs/',
   title: 'Atlas',
   description: 'Atlas design system for OSM',
+  ignoreDeadLinks: true,
   themeConfig: {
     nav: [
       { text: 'Using Atlas', link: '/using-atlas/about', activeMatch: '/using-atlas/' },

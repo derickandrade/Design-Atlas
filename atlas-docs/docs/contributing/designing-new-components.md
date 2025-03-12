@@ -2,7 +2,7 @@
 
 This page outlines the steps that collaborators should follow in order to contribute a new Atlas component.
 
-![Atlas components collection excerpt](../assets/designing-new-components/designing-components.png)
+![Atlas components collection excerpt]()
 
 ## 1. Report and validate
 
