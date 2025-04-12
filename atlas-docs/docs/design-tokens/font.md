@@ -10,12 +10,12 @@
 
 | Example      | Token           | PX (rem)       |
 | ------------ | -------------- | ---------------- |
-| <p style="font-size: var(--font-size-12);"> The quick brown fox jumps over the lazy dog.</p>  | `font-size-12`  | 12px (0.75rem) |
-| <p style="font-size: var(--font-size-16);"> The quick brown fox jumps over the lazy dog.</p>  | `font-size-16`  | 16px (1rem)    |
-| <p style="font-size: var(--font-size-20);"> The quick brown fox jumps over the lazy dog.</p>  | `font-size-20`  | 20px (1.25rem) |
-| <p style="font-size: var(--font-size-24);"> The quick brown fox jumps over the lazy dog.</p>  | `font-size-24`  | 24px (1.5rem)  |
-| <p style="font-size: var(--font-size-32);"> The quick brown fox jumps over the lazy dog.</p>  | `font-size-32`  | 32px (2rem)    |
-| <p style="font-size: var(--font-size-40);"> The quick brown fox jumps over the lazy dog.</p>  | `font-size-40`  | 40px (2.5rem)  |
+| | `font-size-12`  | 12px (0.75rem) |
+| | `font-size-16`  | 16px (1rem)    |
+| | `font-size-20`  | 20px (1.25rem) |
+| | `font-size-24`  | 24px (1.5rem)  |
+| | `font-size-32`  | 32px (2rem)    |
+| | `font-size-40`  | 40px (2.5rem)  |
 | | `font-size-60`  | 60px (3.75rem) |
 | | `font-size-76`  | 76px (4.75rem) |
 | | `font-size-96`  | 96px (6rem)    |
@@ -35,8 +35,8 @@
 | Example      | Token           | PX (rem)       |
 | ------------ | -------------- | ---------------- |
 | <p style="line-height: var(--line-height-header);"> The quick brown fox jumps over the lazy dog.</p>  | `line-height-header`  | 1.25 |
-| <p style="line-height: var(--line-height-paragraph); background-color: black;"> The quick brown fox jumps over the lazy dog.</p>  | `line-height-paragraph`  | 1.4 |
-| <p style="font-weight: var(--font-weight-semibold);"> The quick brown fox jumps over the lazy dog.</p>  | `font-weight-semibold`  | semibold (600) |
+| <p style="line-height: var(--line-height-paragraph);"> The quick brown fox jumps over the lazy dog.</p>  | `line-height-paragraph`  | 1.4 |
+| <p style="line-height: var(--line-height-label);"> The quick brown fox jumps over the lazy dog.</p>  | `line-height-label`  | 1.25 |
 
 ## Paragraph spacing
 

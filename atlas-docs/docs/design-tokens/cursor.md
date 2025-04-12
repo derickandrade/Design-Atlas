@@ -2,7 +2,7 @@
 
 | cursor                                                                                        | token                 | value |
 | --------------------------------------------------------------------------------------------- | --------------------- | ----- |
-| <div class="example-cursor" style="cursor:var(--cursor-default)"><p>mouse here</p></div>      | `cursor-disable`      | default |
+| <div class="example-cursor" style="cursor:var(--cursor-default)"><p>mouse here</p></div>      | `cursor-default`      | default |
 | <div class="example-cursor" style="cursor:var(--cursor-pointer)"><p>mouse here</p></div>      | `cursor-pointer`      | pointer |
 | <div class="example-cursor" style="cursor:var(--cursor-disable)"><p>mouse here</p></div>      | `cursor-disable`      | default |
 | <div class="example-cursor" style="cursor:var(--cursor-text)"><p>mouse here</p></div>         | `cursor-text`         | text |
