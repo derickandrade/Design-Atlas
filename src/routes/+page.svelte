@@ -1,4 +1,5 @@
 <script>
+	import AltInput from "$lib/components/alt-input.svelte";
 	import AtlButton from "$lib/components/atl-button.svelte";
 	import AtlCheckbox from "$lib/components/atl-checkbox.svelte";
 
@@ -10,6 +11,7 @@
 
 <AtlButton>buton</AtlButton>
 <AtlCheckbox>checkbox</AtlCheckbox>
+<AltInput iconLeft=true>Teste</AltInput>
 
 <style>
 	
