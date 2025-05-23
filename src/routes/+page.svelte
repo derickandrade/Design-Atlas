@@ -11,7 +11,7 @@
 
 <AtlButton>buton</AtlButton>
 <AtlCheckbox>checkbox</AtlCheckbox>
-<AltInput iconLeft=true>Teste</AltInput>
+<AltInput iconLeft=true/>
 
 <style>
 	
