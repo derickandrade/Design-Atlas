@@ -9,22 +9,22 @@ hero:
     alt: Logo do Projeto
   actions:
     - theme: brand
-      text: Começar
-      link: /guide/getting-started
+      text: Start using
+      link: /using-atlas/usage.md
     - theme: alt
-      text: Ver no GitHub
-      link: https://github.com/seu-usuario/seu-projeto
+      text: GitHub
+      link: https://github.com/Gustavo22Soaresh/Design-Atlas
 
 features:
   - icon: ⚡️
-    title: Rápido e Leve
-    details: Construído com Vite para performance máxima.
-  - icon: 🛠️
-    title: Fácil de Usar
-    details: Configuração simples e intuitiva.
-  - icon: 🚀
-    title: Pronto para Produção
-    details: Otimizado para deploy em qualquer ambiente.
+    title: Svelte-Powered
+    details: Components optimized with Svelte for efficient rendering and zero runtime overhead.
+  - icon: ✨
+    title: Flexible Theming
+    details: Native support for light/dark themes and customizations using design tokens.
+  - icon: 🤝
+    title: Community-Driven
+    details: Built collaboratively with the OSM community, open to contributions and adaptable to diverse mapping needs.
 ---
 
 

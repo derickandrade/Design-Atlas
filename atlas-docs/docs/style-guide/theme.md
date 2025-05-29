@@ -20,6 +20,10 @@ These classes are based on Atlas’s **design tokens** and ensure all elements a
 
 The *class-first* approach also simplifies maintenance and scalability of the design system and allows smoother integration with utility-based frameworks like Tailwind CSS.
 
+## Theming
+You can easily adapt **Atlas** to your project’s color scheme thanks to the use of **Design Tokens**. This makes it simple to customize elements like `color-accent` while preserving the system’s visual consistency and structure.
+
+We recommend keeping Atlas’s original background colors to maintain contrast and accessibility. When customizing, prioritize adjusting the `color-accent` and always check contrast with background elements to ensure readability.
 
 ## Text color
 Color tokens applied to text and icons

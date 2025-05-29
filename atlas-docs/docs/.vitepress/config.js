@@ -20,7 +20,7 @@ export default {
     socialLinks: [
       { 
         icon: 'github', 
-        link: 'https://github.com/wikimedia/design-codex', 
+        link: 'https://github.com/Gustavo22Soaresh/Design-Atlas', 
         ariaLabel: 'Atlas on GitHub' 
       }
     ],
@@ -61,6 +61,9 @@ export default {
           text: 'Architecture Decisions',
           items: [
             { text: 'Overview', link: '/using-atlas/adrs/overview' },
+            { text: 'ADR-01 - Design Tokens', link: '/using-atlas/adrs/01-adr-design-tokens.md' },
+            { text: 'ADR-02 - Adoption of Svelte as Frontend Framework', link: '/using-atlas/adrs/02-svelte.md' },
+            { text: 'ADR-03 - Adoption of the class-first approach in CSS', link: '/using-atlas/adrs/03-adr-adoption-of-class-first-approach-in-css.md'}
           ]
         }
       ],
