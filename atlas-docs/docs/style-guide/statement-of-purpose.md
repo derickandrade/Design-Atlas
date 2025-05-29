@@ -1,0 +1,6 @@
+# Statement of Purpose
+**OpenStreetMap is, by its very nature, a community-driven and open-source project.** Our goal is to extend this core philosophy of openness and collaboration to our global community, which relies on our open geospatial data as a vital source of knowledge.  
+
+Guided by the principles of **"A Map for All," "Reliability," and "Consistency,"** we work with contributors from all backgrounds to ensure that anyone (regardless of skills, language, or resources) can use, contribute to, and benefit from the map. Through **Atlas**, we put these values into practice with tested, documented, and adaptable standards, prioritizing accessibility and coherence across every experience.  
+
+We are in a state of continuous evolution, open to feedback and change. That’s why we invite you to collaborate, propose ideas, or discuss our work always aligned with our **Principles** and the **[OSM Code of Conduct](https://osmfoundation.org/wiki/Etiquette)**. Together, we strengthen this shared resource for humanity.  

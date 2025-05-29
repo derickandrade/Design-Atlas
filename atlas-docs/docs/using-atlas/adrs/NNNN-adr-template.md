@@ -1,6 +1,6 @@
 # ADR NNNN) Title
 
-Date: YYYY-MM-DD
+Date: DD-MM-YYYY
 
 ## Status
 

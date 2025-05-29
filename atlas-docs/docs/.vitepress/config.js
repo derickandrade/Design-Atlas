@@ -93,7 +93,8 @@ export default {
         {
           text: 'Style Guide',
           items: [
-            { text: 'Overview', link: '/style-guide/overview' }
+            { text: 'Overview', link: '/style-guide/overview' },
+            { text: 'Statement of Purpose', link: '/style-guide/statement-of-purpose' }
           ]
         },
         {
