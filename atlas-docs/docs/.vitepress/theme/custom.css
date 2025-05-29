@@ -1,0 +1,7 @@
+:root {
+  --vp-c-brand: #82bf71; /* cor primária personalizada */
+  --vp-c-brand-light: #a6d19c;
+  --vp-c-brand-dark: #57814c;
+
+  font-family: 'Source Sans 3', sans-serif;
+}

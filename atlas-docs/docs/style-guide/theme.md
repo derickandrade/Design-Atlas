@@ -1,4 +1,8 @@
 # Theme
+The Atlas color palette is used to bring visual meaning to interface elements and convey specific
+messages in certain instances. The primary colors used are various shades of gray as textual and
+foundational elements, blue as progressive elements, and red, yellow, and green to convey status.
+To check the contrast ratio between two colors, visit the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/).
 
 For documentation on the entire color palette, visit [Colors](/design-tokens/colors.md).
 
@@ -7,6 +11,19 @@ Some colors vary between light and dark modes. Use the color mode switcher in th
 the colors in the different modes. Using design tokens rather than raw hex codes will ensure you're
 automatically using the right color for the chosen mode.
 :::
+
+## Class First 
+
+The Atlas color system follows a *class-first* approach, which means you can apply styles directly using utility classes like `color-accent`, `bg-primary`, `text-link`, and others. This enables faster and more consistent interface development without relying on inline styles or custom CSS for each element.
+
+These classes are based on Atlas’s **design tokens** and ensure all elements adhere to the OpenStreetMap visual identity, including accessibility, contrast, and responsiveness. By using classes like `color-accent`, you apply the accent color defined in the active theme (whether light or dark) ensuring visual harmony across all contexts.
+
+The *class-first* approach also simplifies maintenance and scalability of the design system and allows smoother integration with utility-based frameworks like Tailwind CSS.
+
+## Theming
+You can easily adapt **Atlas** to your project’s color scheme thanks to the use of **Design Tokens**. This makes it simple to customize elements like `color-accent` while preserving the system’s visual consistency and structure.
+
+We recommend keeping Atlas’s original background colors to maintain contrast and accessibility. When customizing, prioritize adjusting the `color-accent` and always check contrast with background elements to ensure readability.
 
 ## Text color
 Color tokens applied to text and icons

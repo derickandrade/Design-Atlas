@@ -1,10 +1,6 @@
 # Colors
 
-The Atlas color palette is used to bring visual meaning to interface elements and convey specific
-messages in certain instances. The primary colors used are various shades of gray as textual and
-foundational elements, blue as progressive elements, and red, yellow, and green to convey status.
-For documentation on how all colors are applied, visit [Theme](theme.md).
-To check the contrast ratio between two colors, visit the [WebAIM contrast checker](https://webaim.org/resources/contrastchecker/).
+For documentation on how all colors are applied, visit [Theme](../style-guide/theme.md). 
 
 ## base
 <div class="color-card">
