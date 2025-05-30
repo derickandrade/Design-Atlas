@@ -85,7 +85,7 @@
 		height: 100%;
 		box-sizing: border-box;
 		border: var(--border-width-04) solid var(--border-color-base);
-		border-radius: var(--radius-sm);
+		border-radius: var(--border-radius-4);
 		background-color: var(--color-base-transparent);
 		font-weight: var(--typography-font-weight-regular);
 		font-size: var(--typography-font-size-16);
