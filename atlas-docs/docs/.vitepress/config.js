@@ -1,5 +1,5 @@
 export default {
-  base: '/',
+  base: '/docs/',
   title: 'Atlas',
   description: 'Atlas design system for OSM',
   ignoreDeadLinks: true,
