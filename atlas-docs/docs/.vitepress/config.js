@@ -176,9 +176,9 @@ export default {
               { text: 'Checkbox', link: '/components/demos/checkbox' },
               { text: 'Chip', link: '/components/demos/chip' },
               { text: 'Field', link: '/components/demos/field' },
-              { text: 'Input', link: '/components/demos/input' },
               { text: 'HR', link: '/components/demos/hr' },
-              { text: 'Links', link: '/components/demos/links' },
+              { text: 'Label', link: '/components/demos/label' },
+              { text: 'Link', link: '/components/demos/link' },
               { text: 'Menu', link: '/components/demos/menu' },
               { text: 'Modals', link: '/components/demos/modals' },
               { text: 'Pagination', link: '/components/demos/pagination' },
@@ -186,8 +186,9 @@ export default {
               { text: 'Select', link: '/components/demos/select' },
               { text: 'Switch', link: '/components/demos/switch' },
               { text: 'Tab', link: '/components/demos/tab' },
-              { text: 'Text-Area', link: '/components/demos/text-area' },
-              { text: 'Tooltips', link: '/components/demos/tooltips' },
+              { text: 'TextArea', link: '/components/demos/text-area' },
+              { text: 'TextInput', link: '/components/demos/textinput' },
+              { text: 'Tooltip', link: '/components/demos/tooltip' },
       ]
     }
   ],
