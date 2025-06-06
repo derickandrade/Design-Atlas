@@ -1,7 +1,7 @@
 <script>
 	import AtlButton from '$lib/components/atl-button.svelte';
 	import AtlCheckbox from '$lib/components/atl-checkbox.svelte';
-	import AtlField from '$lib/components/atl-field.svelte';
+	import AtlTextInput from '$lib/components/atl-textInput.svelte';
 	import AtlLabel from '$lib/components/atl-label.svelte';
 </script>
 
@@ -11,8 +11,8 @@
 
 <AtlButton>buton</AtlButton>
 <AtlCheckbox>checkbox</AtlCheckbox>
-<AtlField />
-<AtlLabel/>
+<AtlTextInput />
+<AtlLabel />
 
 <style>
 </style>

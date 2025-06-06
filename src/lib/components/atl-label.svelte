@@ -60,7 +60,6 @@
 		line-height: 125%;
 		letter-spacing: 0%;
 		vertical-align: middle;
-		
 	}
 
 	.atl-label-description {
