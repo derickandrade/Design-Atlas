@@ -14,7 +14,12 @@
 		<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
 		<AtlButton>buton</AtlButton>
 		<AtlCheckbox>Checkbox</AtlCheckbox>
-		<AtlLabel showDescription=true description="description text is massive" state=required label="text of the label"/>
+		<AtlLabel 
+			showDescription=true 
+			description="description text is massive" 
+			type=required 
+			label="text of the label"
+		/>
 		<AtlTextInput />
 		
 	</div>

@@ -1,26 +1,29 @@
 <script>
-	export let state = '';
-	export let showDescription = false;
+	export let id = ''; // mesmo ID usado no <input>
 	export let label = 'Label';
-	export let description = 'Description';
+	export let type = '';
+	export let description = '';
+	export let showDescription = false;
 
-	$: isRequired = state === 'required';
-	$: isOptional = state === 'optional';
+	$: isRequired = type === 'required';
+	$: isOptional = type === 'optional';
 </script>
 
 <div class="atl-label">
-	<span class="label">
+	<label for={id}>
 		{label}
 		{#if isRequired}
-			<span style="color: var(--red-500);">*</span>
+			<span aria-hidden="true" style="color: var(--red-500);">*</span>
 		{/if}
 		{#if isOptional}
 			<span class="label regular color-subtle">(opcional)</span>
 		{/if}
-	</span>
+	</label>
 
 	{#if showDescription && description}
-		<span class="label regular color-subtle">{description}</span>
+		<span class="label regular color-subtle" id={`${id}-description`}>
+			{description}
+		</span>
 	{/if}
 </div>
 

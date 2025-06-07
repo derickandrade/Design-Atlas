@@ -76,7 +76,7 @@
 		position: relative;
 		display: inline-flex;
 		align-items: center;
-		width: 100%; /* usar relativo e width max e min */
+		width: 100%;
 		max-width: var(--size-416);
 		height: var(--size-40);
 	}
@@ -87,31 +87,30 @@
 		box-sizing: border-box;
 		border: var(--border-width-04) solid var(--border-color-base);
 		border-radius: var(--border-radius-4);
-		background-color: var(--color-base-transparent); /* none */
-		font-weight: var(--typography-font-weight-regular); /* var(--font-weight-regular) */
-		font-size: var(--typography-font-size-16); 
-		line-height: 125%; /* var (--line-height-paragraph) */
+		background-color: transparent;
+		font-size: var(--font-size-16); 
+		line-height: var(--line-height-label);
 		transition: padding 0.2s ease;
-	}
 
-	input:hover {
-		background: var(--colors-base-transparent);
-		border: 1px solid var(--border-color-accent);
-	}
+		&:hover {
+			border: var(--border-width-1) solid var(--border-color-accent);
+		}
 
-	input:focus {
-		border: 2px solid var(--border-color-focus);
+		&:focus {
+		border: var(--border-width-2) solid var(--border-color-focus);
 	}
-
+	
+	}
+	
 	input.empty-disabled {
 		background: var(--bgn-base);
-		border-top: 0.4px solid var(--border-color-base);
+		border-top: var(--border-width-04) solid var(--border-color-base);
 	}
 
 	input.filled-disabled {
 		background: var(--bgn-base);
 		color: var(--color-base-hover);
-		border-top: 0.4px solid var(--border-color-base);
+		border-top: var(--border-width-04) solid var(--border-color-base);
 	}
 
 	input.success {
@@ -140,5 +139,9 @@
 
 	.icon.right {
 		right: 8px;
+	}
+
+	:focus {
+    outline: none;
 	}
 </style>
