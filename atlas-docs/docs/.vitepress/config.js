@@ -182,7 +182,7 @@ export default {
               { text: 'Menu', link: '/components/demos/menu' },
               { text: 'Modals', link: '/components/demos/modals' },
               { text: 'Pagination', link: '/components/demos/pagination' },
-              { text: 'Radio Buttons', link: '/components/demos/radio-buttons' },
+              { text: 'Radio', link: '/components/demos/radio' },
               { text: 'Select', link: '/components/demos/select' },
               { text: 'Switch', link: '/components/demos/switch' },
               { text: 'Tab', link: '/components/demos/tab' },
