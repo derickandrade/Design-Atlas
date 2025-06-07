@@ -31,7 +31,7 @@
     input[type="checkbox"] {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;
         appearance: none;
         height: var(--size-16);
         width: var(--size-16);

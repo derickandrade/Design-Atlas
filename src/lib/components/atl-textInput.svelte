@@ -76,8 +76,9 @@
 		position: relative;
 		display: inline-flex;
 		align-items: center;
-		width: 200px; /* usar relativo e width max e min */
-		height: 40px; /* var(--size-40) */
+		width: 100%; /* usar relativo e width max e min */
+		max-width: var(--size-416);
+		height: var(--size-40);
 	}
 
 	input {
