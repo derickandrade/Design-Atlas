@@ -184,10 +184,10 @@ export default {
               { text: 'Pagination', link: '/components/demos/pagination' },
               { text: 'Radio', link: '/components/demos/radio' },
               { text: 'Select', link: '/components/demos/select' },
-              { text: 'Switch', link: '/components/demos/switch' },
-              { text: 'Tab', link: '/components/demos/tab' },
+              { text: 'Tabs', link: '/components/demos/tabs' },
               { text: 'TextArea', link: '/components/demos/text-area' },
               { text: 'TextInput', link: '/components/demos/textinput' },
+              { text: 'ToggleSwitch', link: '/components/demos/toggleswitch' },
               { text: 'Tooltip', link: '/components/demos/tooltip' },
       ]
     }
