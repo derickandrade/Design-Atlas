@@ -108,10 +108,10 @@
 	}
 
 	.atl-field:has(input:disabled) .icon {
-		opacity: 0.3;
+		opacity: var(--opacity-30);
 	}
 	.atl-field:has(input:read-only) .icon {
-		opacity: 0.7;
+		opacity: var(--opacity-50);
 	}
 	.icon {
 		position: absolute;
@@ -151,7 +151,7 @@
 	}
 
 	.clear-button:hover {
-		opacity: 0.7;
+		opacity: var(--opacity-80);
 	}
 
 	.icon.right.end-icon {
