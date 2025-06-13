@@ -87,13 +87,12 @@
 		padding-left: 12px;
 		padding-right: 12px;
 
-		&:hover {
-			border-color: var(--border-color-accent);
-		}
-
 		&:focus {
 			border-color: var(--border-color-focus);
 		}
+	}
+	input:not(:disabled):not(:read-only):hover {
+		border-color: var(--border-color-accent);
 	}
 	input:disabled {
 		background: var(--bgn-base);
@@ -108,6 +107,12 @@
 		border-color: var(--border-color-error);
 	}
 
+	.atl-field:has(input:disabled) .icon {
+		opacity: 0.3;
+	}
+	.atl-field:has(input:read-only) .icon {
+		opacity: 0.7;
+	}
 	.icon {
 		position: absolute;
 		top: 50%;
