@@ -157,4 +157,7 @@
 	.icon.right.end-icon {
 		right: var(--spacing-8);
 	}
+	:focus {
+    outline: none;
+	}
 </style>
