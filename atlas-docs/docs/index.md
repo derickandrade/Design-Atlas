@@ -4,9 +4,6 @@ layout: home
 hero:
   name: Atlas
   text: Design System for OpenStreetMap.
-  image:
-    src: /assets/Logo_design.svg
-    alt: Logo do Projeto
   actions:
     - theme: brand
       text: Start using
