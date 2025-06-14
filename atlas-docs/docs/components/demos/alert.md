@@ -1,10 +1,10 @@
 # Alerts
 
+The Alert component is designed to deliver system information to users in an explicit and noticeable manner. It supports various use cases including feedback delivery, warnings, and error reporting, with display options ranging from standalone messages to inline form validation feedback.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-The Alert component is designed to deliver system information to users in an explicit and noticeable manner. It supports various use cases including feedback delivery, warnings, and error reporting, with display options ranging from standalone messages to inline form validation feedback.
 
 ![][image4]
 
