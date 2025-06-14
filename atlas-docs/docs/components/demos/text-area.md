@@ -1,10 +1,10 @@
 # TextArea
 
+A TextArea is a multi-line text input that allows manual resizing if needed.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-A TextArea is a multi-line text input that allows manual resizing if needed.
 
 ![][image1]
 

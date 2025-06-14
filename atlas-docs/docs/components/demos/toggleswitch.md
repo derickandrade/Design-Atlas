@@ -1,10 +1,10 @@
 # ToggleSwitch
 
+A ToggleSwitch enables the user to instantly toggle between on and off states.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-A ToggleSwitch enables the user to instantly toggle between on and off states.
 
 ![][image1]
 

@@ -1,10 +1,10 @@
 # TextInput
 
+A TextInput is a form element that lets users input and edit a single-line text value.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-A TextInput is a form element that lets users input and edit a single-line text value.
 
 ![][image1]
 

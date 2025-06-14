@@ -1,10 +1,10 @@
 # Tabs
 
+Tabs consist of two or more tab items created for navigating between different sections of content.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-Tabs consist of two or more tab items created for navigating between different sections of content.
 
 ![][image1]
 

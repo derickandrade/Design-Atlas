@@ -1,10 +1,10 @@
 # Checkbox
 
+A Checkbox is a binary input that can appear by itself or in a multiselect group. Checkboxes can be selected, unselected or in an indeterminate state.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-A Checkbox is a binary input that can appear by itself or in a multiselect group. Checkboxes can be selected, unselected or in an indeterminate state.
 
 **![][image1]**
 

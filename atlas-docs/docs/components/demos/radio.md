@@ -1,10 +1,10 @@
 # Radio
 
+A Radio is a binary input that is usually combined in a group of two or more options. They signal a pattern where users can only select one of the available options. Radios are also known as “radio buttons”.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-A Radio is a binary input that is usually combined in a group of two or more options. They signal a pattern where users can only select one of the available options. Radios are also known as “radio buttons”.
 
 ![][image1]
 

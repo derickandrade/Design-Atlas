@@ -1,10 +1,11 @@
 # Select
 
+A Select is an input with a dropdown menu of predefined, selectable options.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
 
-A Select is an input with a dropdown menu of predefined, selectable options.
 
 ![][image1]
 

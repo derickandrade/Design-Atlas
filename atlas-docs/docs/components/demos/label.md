@@ -1,10 +1,10 @@
 # Label
 
+A Label provides a descriptive title for an input or form field.
+
 ::: warning Working in progress
 This component is still under development. It is not yet available in releases of Atlas.
 :::
-
-A Label provides a descriptive title for an input or form field.
 
 ![][image1]
 
