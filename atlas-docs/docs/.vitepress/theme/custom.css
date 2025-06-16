@@ -57,7 +57,7 @@
   --border-style-error: var(--border-width-1, 0.0625rem) solid var(--border-color-error);
   --border-style-success: var(--border-width-1, 0.0625rem) solid var(--border-color-success);
 
-  --vp-c-bg: var(--bgn-base);
+  --vp-c-bg: var(--bgn-surface);
 
   --vp-button-focus-outline: var(--border-style-focus); /* Borda do botão Start Using */
   
@@ -65,10 +65,10 @@
   --vp-button-brand-hover-bg: var(--bgn-accent-hover); /* Cor do hover do botão Start Using */
   --vp-button-brand-active-bg: var(--bgn-accent-active); /* Cor do active do botão Start Using */
 
-  --vp-button-alt-bg: var(--bgn-base); /* Cor do botão GitHub*/
-  --vp-button-alt-text: var(--color-accent); /* Cor do texto do botão GitHub */
-  --vp-button-alt-hover-bg: var(--color-accent); /* Cor do hover do botão GitHub */
-  --vp-button-alt-hover-text: var(--bgn-surface); /* Cor do texto do hover do botão GitHub */
+  --vp-button-alt-bg: var(--bgn-surface); /* Cor do botão GitHub*/
+  --vp-button-alt-text: var(--color-base); /* Cor do texto do botão GitHub */
+  --vp-button-alt-hover-bg: var(--bgn-surface-hover); /* Cor do hover do botão GitHub */
+  --vp-button-alt-hover-text: var(--color-base-hover); /* Cor do texto do hover do botão GitHub */
   --vp-button-alt-active-bg: var(--color-accent-active); /* Cor do active do botão GitHub */
   --vp-button-alt-active-text: var(--bgn-surface); /* Cor do texto do active do botão GitHub */
 
@@ -81,12 +81,18 @@
   a:visited:focus {
     color: var(--color-link);
   }
-  a:visited {
-    color: var(--color-link-visited);
-  }
   a:active {
     color: var(--color-link-active);
   }
+}
+
+.VPNavBar.hover {
+  color: var(--color-accent);
+}
+
+.VPNavBar .VPNavBarMenuLink.active {
+  color: var(--color-accent); /* cor quando o link está ativo */
+  font-weight: bold;
 }
 
 /* Dark Mode */
