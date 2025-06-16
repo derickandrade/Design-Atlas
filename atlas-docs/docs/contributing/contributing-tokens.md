@@ -28,7 +28,7 @@ Once the task is validated with the DST and the need is clear, you’ll be able 
 
 Designers should start by checking the following resources in order to collect relevant information about the existing tokens and their current use cases:
 
-- [Atlas Figma library](https://www.figma.com/design/2vheURjyvYg2oyBeuQOxQ1/%F0%9F%92%A0-Atlas---Design-System?node-id=0-1&t=NOazCFH83sKtFATq-1): enable this library to reuse all the design tokens that were translated into Figma styles and variables.
+- [Atlas Figma library](https://www.figma.com/design/2vheURjyvYg2oyBeuQOxQ1/%F0%9F%92%A0-Atlas---Design-System?node-id=187-40&t=BdrEA52jrEJyfHYd-1): enable this library to reuse all the design tokens that were translated into Figma styles and variables.
 - [Design tokens demo](../design-tokens/overview.md): check the current existing tokens in the Atlas demo.
 
 Designers will start creating an initial inventory with the relevant use cases where this new token will be used. This process allows designers to understand the extent to which the new token will be reused. Also, tokens within the same category will need to be observed: the new token will have to fit into the existing scale.
