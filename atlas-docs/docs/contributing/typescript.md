@@ -4,6 +4,11 @@ outline: deep
 
 # Working with TypeScript
 
+::: warning Working in progress
+We are current working on this page.
+:::
+
+<!--
 TypeScript can sometimes be difficult or confusing to work with. This page documents tips for
 working with TypeScript, understanding errors, common pitfalls, and particular ways that Codex uses
 TypeScript.
@@ -338,3 +343,4 @@ src/components/foo-bar/FooBar.vue:117:71 - error TS2345: Argument of type '(even
 
 In both cases, the solution is to ensure that the event name passed to `useModelWrapper` matches
 one of the event names in the component's `emits` array.
+-->

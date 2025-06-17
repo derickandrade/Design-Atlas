@@ -4,6 +4,12 @@ outline: deep
 
 # Testing components
 
+::: warning Working in progress
+We are current working on this page.
+:::
+
+<!--
+
 ## Unit tests
 
 ::: tip TL;DR
@@ -267,3 +273,4 @@ so they may not be discovered until `vue-tsc` is run (locally or in CI). To fix 
 sure that the types of the props passed into the mount function match the types that the component
 expects. For more on how these errors happen and how to fix them, see
 [the TypeScript guidelines](./typescript.md#wrong-types-for-props-in-jest-tests).
+-->
