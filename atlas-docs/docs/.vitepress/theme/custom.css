@@ -60,7 +60,7 @@
   --vp-c-bg: var(--bgn-surface);
 
   --vp-home-hero-name-color: var(--color-base); /* Cor do nome do projeto */
-
+  --vp-local-search-highlight-bg: var(--color-accent); /* Cor de destaque do local search */
 
   /* Botão GitHub */
   .VPButton.alt {
@@ -134,19 +134,50 @@
     background: var(--color-accent); /* Cor do marcador de contorno */
   }
 
+  /* Botão de pesquisa */
   .DocSearch-Button:hover {
     border: var(--border-style-focus); /* Borda do botão de pesquisa */
     border-color: var(--color-accent);
   }
 
+  /* Tela de pesquisa */
   .shell .search-bar:focus-within {
     border-color: var(--color-accent) !important;
+  }
+
+  .shell .search-bar:hover {
+    border-color: var(--color-accent) !important; /* Cor da borda do campo de pesquisa ao passar o mouse */
   }
 
   .toggle-layout-button:hover,
   .local-search-icon:hover{
     color: var(--color-accent) !important; /* Cor do ícone de pesquisa e do botão de layout */
-      }
+  }
+
+  /* Resultados da tela de pesquisa */
+  a.result,
+  a.result:visited,
+  a.result:hover,
+  a.result:focus-within,
+  a.result span {
+    color: var(--color-base);
+    border-color: var(--colorbase);
+  }
+  
+  /* Resultado em destaque/hover */
+  a.result.selected,
+  a.result.selected:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  } 
+
+  a.result.selected span{
+    color: var(--color-accent);
+  }
+  a.result.selected span.text {
+    font-weight: bold;
+  }
+  
 
   /* NavBar Styles - Não herda o estilo de link do tema */
   .VPNavBar.hover {
