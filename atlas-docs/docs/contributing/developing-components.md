@@ -4,6 +4,12 @@ outline: deep
 
 # Developing components
 
+::: warning Working in progress
+We are current working on this page.
+:::
+
+<!--
+
 ## Local development
 
 ### Vite Sandbox
@@ -247,13 +253,13 @@ Below is sample usage from the TextInput component:
 
 ```vue
 <template>
-	<!-- Add rootClasses and rootStyle to the root element. -->
+	<!-- Add rootClasses and rootStyle to the root element. 
 	<div
 		class="cdx-text-input"
 		:class="rootClasses"
 		:style="rootStyle"
 	>
-		<!-- Bind otherAttrs to the input. -->
+		<!-- Bind otherAttrs to the input.
 		<input
 			class="cdx-text-input__input"
 			v-bind="otherAttrs"
@@ -383,13 +389,13 @@ happen after the component is mounted.
 Below is an example that demonstrates the use of the `useComputedDirection` composable function:
 ```vue
 <template>
-	<!-- Set ref="rootElement" on the root element of your component -->
+	<!-- Set ref="rootElement" on the root element of your component
 	<div
 		ref="rootElement"
 		class="cdx-my-component"
 		@keydown.left.right="onKeydown"
 	>
-		<!-- ...component template goes here... -->
+		<!-- ...component template goes here...
 	</div>
 </template>
 
@@ -546,3 +552,5 @@ const translatedSortCaption = useI18n(
 
 Note that params will typically be refs to support reactivity, but they can be static values as
 well.
+
+-->

@@ -4,6 +4,12 @@ outline: deep
 
 # Development basics
 
+::: warning Working in progress
+We are current working on this page.
+:::
+
+<!--
+
 ::: tip Before you dive into contributing code:
 - Read the [general contribution guidelines](./overview.md)
 - Check out the [code design principles](../using-codex/guiding-principles.md#code-design-patterns)
@@ -138,8 +144,6 @@ that identifies the name of the rule to be disabled, like this:
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 input.value!.click();
 ```
-```vue-html
-<!-- eslint-disable-next-line vue/no-v-html -->
 <div v-html="foo" />
 ```
 ```css
@@ -163,12 +167,10 @@ const MODES = [
 /* eslint-enable no-multi-spaces */
 ```
 ```vue-html
-<!-- eslint-disable vue/no-v-html -->
 <g
   v-if="iconSvg"
   v-html="iconSvg"
 />
-<!-- eslint-enable vue/no-v-html -->
 ```
 ```css
 /* stylelint-disable plugin/no-unsupported-browser-features */
@@ -220,3 +222,5 @@ Configure Rewrap to wrap at 100 characters column:
 {
 	"rewrap.wrappingColumn": 100
 }
+
+--->

@@ -4,6 +4,12 @@ outline: deep
 
 # Component demos
 
+::: warning Working in progress
+We are current working on this page.
+:::
+
+<!--
+
 ::: tip TL;DR
 - Codex uses [VitePress](https://vitepress.vuejs.org/) to demo components.
 - Run `npm run doc:dev` to serve the demo site locally.
@@ -240,3 +246,4 @@ is how the configurable Button demo is set up:
 Styles for a component demo page should be placed inside a `<style>` block in the markdown file.
 
 Styles for example components should be scoped to ensure they only apply to that component.
+-->
