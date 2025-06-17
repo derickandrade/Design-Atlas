@@ -33,9 +33,6 @@ Alerts includes the following elements.
 #### Icon 
 Icons enhance user recognition and allow for more concise messaging. Each message type (e.g., "success") is paired with a distinct icon to ensure quick identification.
 
-* **Do:** Customize the icon in notice messages or hide it if needed.  
-* **Don't:** Avoid removing or replacing the icon in warning, error, and success messages, as it reinforces the meaning of their respective statuses.
-
 #### Alert Text  
 The alert text should be as clear and concise as possible, providing feedback to users. If applicable, it may also suggest next steps.
 
@@ -79,6 +76,23 @@ Only info Alerts may have a custom icon.
 ![][image3]
 
 ## Technical implementation
+### Props
+| **Prop Name** | **Description**                                                               | **Type**                | **Values**                                      | **Default** |
+| ------------- | ----------------------------------------------------------------------------- | ----------------------- | ----------------------------------------------- | ----------- |
+| `type`        | Defines the alert type, which determines the visual style and purpose.        | `'inline'` or `'box'` | `'inline'`, `'box'`                           | `'box'`  |
+| `state`       | Indicates the status or severity of the message.                              | `string`                | `'info'`, `'warning'`, `'error'`, `'success'` | `'info'`   |
+| `close`       | Whether the alert can be dismissed by the user (adds a close/dismiss button). | `boolean`               | —                                               | `false`     |
+| `title`       | Toggles whether the alert displays a title.                                   | `boolean`               | —                                               | `true`      |
+| `titleText`   | The text content for the alert’s title (only shown if `title` is `true`).     | `string`                | —                                               | `'Title'`   |
+
+### Extended Props (Optional Enhancements)
+| **Prop Name**        | **Description**                                                                                                                                                    | **Type**              | **Values** | **Default** |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------- | ---------- | ----------- |
+| `icon`               | Allows replacing the default icon. Typically used only for `'notice'` type.                                                                                        | `string` (icon name)  | —          | `null`      |
+| `fadeIn`             | Enables a fade-in transition effect when the alert appears. Useful for dynamically loaded alerts.                                                                  | `boolean`             | —          | `false`     |
+| `allowUserDismiss`   | Adds a dismiss (close) button, allowing the user to manually remove the alert.                                                                                     | `boolean`             | —          | `false`     |
+| `dismissButtonLabel` | Accessible label for the dismiss button (screen reader text). If omitted, defaults to `'Close'`.                                                                   | `string`              | —          | `''`        |
+| `autoDismiss`        | Enables automatic dismissal after a period. Accepts `true` (default 4000ms) or a custom duration in milliseconds. **Note:** Not available if `state` is `'error'`. | `boolean` or `number` | —          | `false`     |
 
 ### Keyboard navigation
 

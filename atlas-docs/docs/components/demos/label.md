@@ -45,14 +45,34 @@ Consider using the [Field](./field.md) component, which includes the Label compo
 ### Basic usage
 
 By default, the Label will be visible with the label text styled in bold.
+``` svelte
+<AtlLabel
+  id="username"
+  label="Username"
+/>
+
+```
 
 ### Visually-hidden label
 All inputs need a label to meet accessibility standards. In rare instances, you may not need a visible label if it's very clear from context how to use an input.
+``` svelte
+<AtlLabel
+  id="search"
+  label="Search"
+  visuallyHidden={true}
+/>
+```
 
 ### With description
 
 Description text can include markup. Only links and text formatting are recommended as description text should be concise.
-
+``` svelte
+<AtlLabel
+  id="email"
+  label="Email"
+  description="Enter your work email address. We’ll never share it."
+/>
+```
 * **Do:** Explain what users should do to use this element effectively.  
 * **Don't:** Highlight what users should avoid when using this element.
 
@@ -60,8 +80,47 @@ Description text can include markup. Only links and text formatting are recommen
 
 This component outputs a different HTML element depending on whether it is a label for a single input or for a group of inputs. Below are examples of a label and a legend with an associated description.
 
+#### Label
+``` svelte
+<AtlLabel
+  id="first-name"
+  label="First Name"
+  description="As it appears on your ID."
+/>
+```
+
+#### Legend
+``` svelte
+<AtlLabel
+  isLegend={true}
+  label="Preferred Contact Method"
+  description="Select all that apply."
+/>
+```
+
 
 ## Technical implementation
+### Props
+| **Prop Name**    | **Description**                                                                                                                       | **Type**         | **Default** |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------- |
+| `id`             | The ID of the label element itself. Useful for accessibility or testing.                                                              | `string`         | `''`        |
+| `label`          | Label text for the input or field.                                                                                                    | `string`         | `'Label'`   |
+| `icon`           | Icon displayed before the label text.<br> Do not use if the input already has a `startIcon`.                                        | `string \| null` | `null`      |
+| `optional`       | Adds an optional flag next to the label if set to `true`.                                                                             | `boolean`        | `false`     |
+| `optionalFlag`   | Text to indicate that the field is optional.<br> Defaults to `"(optional)"` when `optional` is true.                                | `string`         | `''`        |
+| `visuallyHidden` | Visually hides the label text but keeps it accessible for screen readers.<br> The `description` is also hidden when this is `true`. | `boolean`        | `false`     |
+| `isLegend`       | Renders a `<legend>` element instead of a `<label>` when `true`. <br> Required when the label is inside a `<fieldset>`.              | `boolean`        | `false`     |
+| `disabled`       | Indicates that the associated input is disabled. Updates the label style accordingly.                                                 | `boolean`        | `false`     |
+| `required`       | Marks the input or field as required visually.                                                                                        | `boolean`        | `false`     |
+| `description`    | Short descriptive text that appears below the label.                                                                                  | `string`         | `''`        |
+| `inputId`        | The ID of the input/control this label is associated with. Sets the `for` attribute on `<label>`. Not used when `isLegend` is `true`. | `string`         | `''`        |
+| `descriptionId`  | The ID of the description text.<br>Used to link with `aria-describedby` for accessibility purposes on the input/control.              | `string`         | `''`        |
+
+### Slots
+| **Slot Name** | **Description**                                                          | **Bindings** |
+| ------------- | ------------------------------------------------------------------------ | ------------ |
+| `default`     | Label text. Overrides the `label` prop if used.                          | —            |
+| `description` | Short description or hint below the label. Overrides `description` prop. | —            |
 
 ## Keyboard navigation
 

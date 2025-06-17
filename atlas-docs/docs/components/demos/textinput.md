@@ -20,6 +20,13 @@ Use the TextInput component in forms when the user’s answer to a prompt can no
 
 #### Start Icon (optional)  
 A start icon can be included to visually enhance the input's purpose. For example, the "user avatar" icon might be used in a username field.
+```svelte
+<TextInput
+  inputType="text"
+  startIcon="person"
+  placeholder="Enter your username"
+/>
+```
 
 * **Do:** Use a simple icon that is easily understandable to users.
 
@@ -41,6 +48,12 @@ The following input types can be used:
 
 #### Placeholder text (optional)  
 Placeholder text provides an example of what type of information is being requested in the input.
+```svelte
+<TextInput
+  inputType="text"
+  placeholder="Enter your name"
+/>
+```
 
 * **Do:** Placeholder text should further illustrate and support the TextInput's label.  
 * **Don't:** Placeholder text should never replace the label nor be the input's only description.
@@ -64,13 +77,31 @@ Any of the [native input types](https://developer.mozilla.org/en-US/docs/Web/HTM
 ### Clearable
 
 A clearable TextInput will have a clear button when there is text in the input. When clicked, the clear button will set the input value to an empty string.
-
+```svelte
+    <AtlTextInput inputType='text' clearable=true />
+```
 ### With icons
 
 Any of the [native input types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) can be used. Some types may result in a browser-provided user interface, like a date picker for a date input.later.
 
-* **Do:** Explain what users should do to use this element effectively.  
-* **Don't:** Highlight what users should avoid when using this element.
+```svelte
+<AtlTextInput
+  inputType="text"
+  startIcon="user"
+  endIcon="check"
+  placeholder="Enter your username"
+/>
+```
+
+
+* **Do:**
+    - Use icons to clarify the purpose of the input (e.g., a user icon for username, an email icon for email).
+    - Pair icons with clear placeholders or labels.
+    - Use end icons to indicate status or actions (like a checkmark for valid input).
+* **Don't:** 
+    - Don’t rely only on icons without labels or placeholders — it can confuse users.
+    - Avoid using too many icons that create visual clutter.
+    - Don’t use icons that are ambiguous or irrelevant to the input’s purpose.
 
 ### Form field
 
@@ -81,6 +112,39 @@ The TextInput component exposes native constraint validation methods. Refer to t
 This demo sets the input type to "email" and validates the input on blur. When the input is invalid, it sets the Field's status to "error" and passes the native validation message to the Field component for display.
 
 ## Technical implementation
+### Props
+| **Prop Name** | **Description**                                                                                       | **Type**           | **Values**                                                                                                                               | **Default**     |
+| ------------- | ----------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| `value`       | Current value of the input. (Usado com binding)                                                       | `string \| number` | —                                                                                                                                        | `''`            |
+| `inputType`   | HTML input type attribute.                                                                            | `string`           | `'text'`, `'search'`, `'number'`, `'email'`, `'password'`, `'tel'`, `'url'`, `'week'`, `'month'`, `'date'`, `'datetime-local'`, `'time'` | `'text'`        |
+| `status`      | Validation status. Changes the style according to the state.                                          | `string`           | `'default'`, `'error'`, `'success'`                                                                                                      | `'default'`     |
+| `disabled`    | Disables the input if `true`.                                                                         | `boolean`          | —                                                                                                                                        | `false`         |
+| `readonly`    | Makes the input read-only (not editable).                                                             | `boolean`          | —                                                                                                                                        | `false`         |
+| `placeholder` | Placeholder text shown when the input is empty.                                                       | `string`           | —                                                                                                                                        | `'Placeholder'` |
+| `startIcon`   | Optional icon displayed at the start (left) of the input field.                                       | `string`           | —                                                                                                                                        | `''`            |
+| `endIcon`     | Optional icon displayed at the end (right) of the input field.                                        | `string`           | —                                                                                                                                        | `''`            |
+| `clearable`   | Adds a clear button that appears when there is text in the input. Clicking it clears the input value. | `boolean`          | —                                                                                                                                        | `false`         |
+
+<!-- ### Methods
+| **Method Name**              | **Description**                                                                                                                      | **Signature**                             |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------- |
+| `focus()`                    | Focuses the input element.                                                                                                           | `Returns: void`                           |
+| `blur()`                     | Removes focus (blurs) from the input element.                                                                                        | `Returns: void`                           |
+| `checkValidity()`            | Checks the validity of the input based on native HTML constraints (`required`, `pattern`, etc.). Emits `'invalid'` event if invalid. | `Returns: boolean` (valid or not)         |
+| `reportValidity()`           | Checks validity and displays native browser UI validation error if invalid.                                                          | `Returns: boolean` (valid or not)         |
+| `setCustomValidity(message)` | Sets a custom error message for the input. Pass an empty string (`''`) to reset.                                                     | `Params: message: string — Returns: void` |
+
+### Events
+| **Event Name**      | **Payload**                   | **Description**                                                                                                                                                                                                                            |
+| ------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `update:modelValue` | `{ value: string \| number }` | Emitted when the input value changes (two-way binding).                                                                                                                                                                                    |
+| `keydown`           | `KeyboardEvent`               | Fired when the user presses a key inside the input. *(Excludes Home and End keys unless combined with Ctrl/Cmd.)*                                                                                                                          |
+| `input`             | `InputEvent`                  | Fired whenever the value of the input changes due to direct user input.                                                                                                                                                                    |
+| `change`            | `Event`                       | Fired when a user commits a change (e.g., after blur or pressing Enter).                                                                                                                                                                   |
+| `focus`             | `FocusEvent`                  | Fired when the input gains focus.                                                                                                                                                                                                          |
+| `blur`              | `FocusEvent`                  | Fired when the input loses focus.                                                                                                                                                                                                          |
+| `clear`             | `MouseEvent`                  | Fired when the input is cleared via the clear button (when `clearable` is `true`).                                                                                                                                                         |
+| `invalid`           | `Event`                       | Fired when the input fails HTML constraint validation (e.g., `required`, `pattern`, `min`, `max`). See [HTMLInputElement invalid event](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/invalid_event) for more details. | -->
 
 ## Keyboard navigation
 
