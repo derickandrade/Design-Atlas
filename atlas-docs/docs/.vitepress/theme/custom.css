@@ -59,19 +59,51 @@
 
   --vp-c-bg: var(--bgn-surface);
 
-  --vp-button-focus-outline: var(--border-style-focus); /* Borda do botão Start Using */
+  --vp-home-hero-name-color: var(--color-base); /* Cor do nome do projeto */
+  --vp-local-search-highlight-bg: var(--color-accent); /* Cor de destaque do local search */
+
+  /* Botão GitHub */
+  .VPButton.alt {
+    background: var(--bgn-surface); /* Cor do botão GitHub */
+    color: var(--color-base); /* Cor do texto do botão GitHub */
+  }
   
-  --vp-button-brand-bg: var(--bgn-accent); /* Cor do botão Start Using */
-  --vp-button-brand-hover-bg: var(--bgn-accent-hover); /* Cor do hover do botão Start Using */
-  --vp-button-brand-active-bg: var(--bgn-accent-active); /* Cor do active do botão Start Using */
+  .VPButton.alt:focus:not(:active) { /* Foco no botão GitHub se o botão não foi clicado*/
+    outline: var(--vp-button-focus-outline); /* Borda do botão GitHub */
+    border: var(--border-style-focus); /* Borda do botão GitHub */ 
+    color: var(--color-base); /* Cor do texto do botão GitHub no foco */
+  }
+  .VPButton.alt:hover,
+  .VPButton.alt:active {
+    background: var(--bgn-surface-hover); /* Cor do hover do botão GitHub */
+    color: var(--color-base-hover); /* Cor do texto do hover do botão GitHub */
+    font-weight: bold; /* Deixa o texto em negrito no hover do botão GitHub */
+  }
 
-  --vp-button-alt-bg: var(--bgn-surface); /* Cor do botão GitHub*/
-  --vp-button-alt-text: var(--color-base); /* Cor do texto do botão GitHub */
-  --vp-button-alt-hover-bg: var(--bgn-surface-hover); /* Cor do hover do botão GitHub */
-  --vp-button-alt-hover-text: var(--color-base-hover); /* Cor do texto do hover do botão GitHub */
-  --vp-button-alt-active-bg: var(--color-accent-active); /* Cor do active do botão GitHub */
-  --vp-button-alt-active-text: var(--bgn-surface); /* Cor do texto do active do botão GitHub */
+  .VPButton.brand,
+  .VPButton.alt {
+    border-radius: var(--border-radius-04, 0.25rem); /* Raio da borda do botão Start Using e GitHub */
+  }
+  
+  /* Botão Start Using */
+  .VPButton.brand {
+    background-color: var(--bgn-accent);
+    color: var(--bgn-surface);
+  }
+  .VPButton.brand:hover {
+    color: var(--bgn-surface);
+    background: var(--bgn-accent-hover);
+  }
+  .VPButton.brand:active {
+    background: var(--bgn-accent-active);
+  }
+  .VPButton.brand:focus:not(:active) {
+    background-color: var(--bgn-accent);
+    border: var(--border-style-focus);
+    color: var(--bgn-surface);
+  }
 
+  /* Link Styles */
   a {
     color: var(--color-base);
   }
@@ -84,15 +116,142 @@
   a:active {
     color: var(--color-link-active);
   }
-}
+  a:visited {
+    color: var(--color-link-visited);
+  }
 
-.VPNavBar.hover {
-  color: var(--color-accent);
-}
+  .outline-link,
+  .outline-link:hover,
+  .outline-link:visited{
+    color: var(--color-base) !important; /* Cor do link de contorno */
+  }
 
-.VPNavBar .VPNavBarMenuLink.active {
-  color: var(--color-accent); /* cor quando o link está ativo */
-  font-weight: bold;
+  .outline-link.active {
+    color:var(--color-accent) !important;
+  }
+
+  .outline-marker {
+    background: var(--color-accent); /* Cor do marcador de contorno */
+  }
+
+  /* Botão de pesquisa */
+  .DocSearch-Button:hover {
+    border: var(--border-style-focus); /* Borda do botão de pesquisa */
+    border-color: var(--color-accent);
+  }
+
+  /* Tela de pesquisa */
+  .shell .search-bar:focus-within {
+    border-color: var(--color-accent) !important;
+  }
+
+  .shell .search-bar:hover {
+    border-color: var(--color-accent) !important; /* Cor da borda do campo de pesquisa ao passar o mouse */
+  }
+
+  .toggle-layout-button:hover,
+  .local-search-icon:hover{
+    color: var(--color-accent) !important; /* Cor do ícone de pesquisa e do botão de layout */
+  }
+
+  /* Resultados da tela de pesquisa */
+  a.result,
+  a.result:visited,
+  a.result:hover,
+  a.result:focus-within,
+  a.result span {
+    color: var(--color-base);
+    border-color: var(--colorbase);
+  }
+  
+  /* Resultado em destaque/hover */
+  a.result.selected,
+  a.result.selected:hover {
+    color: var(--color-accent);
+    border-color: var(--color-accent);
+  } 
+
+  a.result.selected span{
+    color: var(--color-accent);
+  }
+  a.result.selected span.text {
+    font-weight: bold;
+  }
+  
+
+  /* NavBar Styles - Não herda o estilo de link do tema */
+  .VPNavBar.hover {
+    color: var(--color-accent);
+  }
+  
+  .VPNavBar a,
+  .VPNavBarMenuLink {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .VPNavBar .VPMenu {
+    background: var(--bgn-surface); /* cor do fundo no menu */
+  }
+
+  .VPNavBar .VPMenuLink .link {
+    color: var(--color-base); /* cor do texto do link no menu */
+  }
+
+  .VPMenuLink .link:hover{
+    background: var(--bgn-surface-hover); /* cor do texto do link no menu ao passar o mouse */
+  }
+
+  .VPNavBar a:hover,
+  .VPNavBar a:focus,
+  .VPNavBar a:visited,
+  .VPNavBarMenuGroup .button:hover .text {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .VPNavBar .VPNavBarMenuLink.active,
+  .VPNavBarMenuGroup.active .button .text,
+  .VPNavBar .VPMenuLink .link.active {
+    color: var(--color-accent) !important; /* cor quando o link está ativo */
+    font-weight: bold;
+  }
+ 
+  .VPSidebarItem.is-active .link .text{
+    color: var(--color-accent) !important; /* Cor do texto do item ativo do menu lateral */
+    font-weight: bold;
+  }
+
+  .VPSidebarItem .link .text{
+    color: var(--color-base) !important; /* Cor do texto do item do menu lateral */
+  }
+  
+  .VPSwitch:hover,
+  .VPSwitch:focus {
+    border-color: var(--color-accent); /* Borda do botão de alternância */
+  }
+
+  
+  .vpi-social-github{
+    color: var(--color-base); /* Cor dos links sociais */
+  }
+
+  .pager .VPLink:hover,
+  .pager .VPLink:focus {
+    border-color: var(--color-accent); /* Borda do hover da paginação */
+
+  }
+
+  .pager .title {
+    color: var(--color-accent); /* Cor do texto da paginação */
+  }
+
+  .header-anchor:hover,
+  .header-anchor:focus,
+  .header-anchor:visited {
+    color: var(--color-accent);
+  }
+
 }
 
 /* Dark Mode */
