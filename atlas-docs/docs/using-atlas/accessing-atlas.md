@@ -4,7 +4,7 @@ Altas is the design system for OpenStreetMap, and it contains the following feat
 
 - [**Style Guide**](../style-guide/overview): for creating harmonious designs across OpenStreetMap.
 - [**Design tokens**](../design-tokens/overview): for writing styles consistent with the Altas Style Guide.
-- [**Icons**](../icons/overview): a collection of icons with language and directionality variants.
+- [**Icons**](../style-guide/icons.md): a collection of icons with language and directionality variants.
 - [**Components**](../components/overview): for building usable, accessible, translatable applications.
 
 Each feature includes the following:
