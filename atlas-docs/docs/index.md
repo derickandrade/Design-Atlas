@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: Start using
-      link: /using-atlas/usage.md
+      link: /using-atlas/accessing-atlas.md
     - theme: alt
       text: GitHub
       link: https://github.com/Gustavo22Soaresh/Design-Atlas

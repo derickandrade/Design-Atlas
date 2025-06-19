@@ -1,12 +1,11 @@
 # Accessing Altas
 
-Altashttps://github.com/Gustavo22Soaresh/Design-Atlas is the design system for Wikimedia, and it contains the following features:
+Altas is the design system for OpenStreetMap, and it contains the following features:
 
-- [**Style Guide**](../style-guide/overview): for creating harmonious designs across Wikimedia.
-- [**Design tokens**](../design-tokens/overview): for writing styles consistent with the Altashttps://github.com/Gustavo22Soaresh/Design-Atlas Style Guide.
+- [**Style Guide**](../style-guide/overview): for creating harmonious designs across OpenStreetMap.
+- [**Design tokens**](../design-tokens/overview): for writing styles consistent with the Altas Style Guide.
 - [**Icons**](../icons/overview): a collection of icons with language and directionality variants.
 - [**Components**](../components/overview): for building usable, accessible, translatable applications.
-- [**Composables**](../composables/overview): common patterns from the Altashttps://github.com/Gustavo22Soaresh/Design-Atlas codebase.
 
 Each feature includes the following:
 
