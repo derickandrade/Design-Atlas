@@ -80,5 +80,5 @@ Buttons may be disabled, but disabled buttons should be used sparingly.
 
 | Key | Function |
 | :---- | :---- |
-| Enter / Space | If the focus is placed on the Button, it activates the Button. |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | If the focus is placed on the Button, it activates the Button. |
 
