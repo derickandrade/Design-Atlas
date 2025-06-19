@@ -53,7 +53,7 @@ When the ButtonGroup is too large to fit on one line, the buttons overflow to th
 
 | Key | Function |
 | :---- | :---- |
-| Tab | It moves the focus to the next Button within the group or to the next interactive element in tab order when the focus is placed on the last Button of the group. |
-| Shift \+ Tab | It moves the focus to the previous Button within the group or to the previous interactive element when the focus is placed on the first Button of the group. |
-| Enter / Space | If the focus is placed on one of the buttons, it activates that Button. |
+| <kbd>Tab</kbd> | It moves the focus to the next Button within the group or to the next interactive element in tab order when the focus is placed on the last Button of the group. |
+| <kbd>Shift</kbd> \+ <kbd>Tab</kbd> | It moves the focus to the previous Button within the group or to the previous interactive element when the focus is placed on the first Button of the group. |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | If the focus is placed on one of the buttons, it activates that Button. |
 
