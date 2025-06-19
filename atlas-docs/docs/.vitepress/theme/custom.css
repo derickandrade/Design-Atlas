@@ -60,75 +60,87 @@
   --vp-c-bg: var(--bgn-surface);
 
   --vp-home-hero-name-color: var(--color-base); /* Cor do nome do projeto */
+
+  --vp-local-search-result-border: var(--color-base) !important; /* Cor da board em destaque no local search */
   --vp-local-search-highlight-bg: var(--color-accent); /* Cor de destaque do local search */
 
-  /* Botão GitHub */
-  .VPButton.alt {
-    background: var(--bgn-surface); /* Cor do botão GitHub */
-    color: var(--color-base); /* Cor do texto do botão GitHub */
-  }
+  --vp-c-brand-1: var(--color-accent); /* Cor da Hashtag no local search */
   
-  .VPButton.alt:focus:not(:active) { /* Foco no botão GitHub se o botão não foi clicado*/
-    outline: var(--vp-button-focus-outline); /* Borda do botão GitHub */
-    border: var(--border-style-focus); /* Borda do botão GitHub */ 
-    color: var(--color-base); /* Cor do texto do botão GitHub no foco */
-  }
-  .VPButton.alt:hover,
-  .VPButton.alt:active {
-    background: var(--bgn-surface-hover); /* Cor do hover do botão GitHub */
-    color: var(--color-base-hover); /* Cor do texto do hover do botão GitHub */
-    font-weight: bold; /* Deixa o texto em negrito no hover do botão GitHub */
+}
+
+/* Borda comum aos botões Start Using e GitHub */
+a.VPButton.medium {
+  border-radius: var(--border-radius-04, 0.25rem) !important;
+}
+
+/* Botão Start Using */
+a.VPButton.medium.brand {
+  background-color: var(--bgn-accent);
+  color: var(--color-inverse) !important;
+
+  &:hover {
+    background-color: var(--bgn-accent-hover);
   }
 
-  .VPButton.brand,
-  .VPButton.alt {
-    border-radius: var(--border-radius-04, 0.25rem); /* Raio da borda do botão Start Using e GitHub */
+  &:active {
+    background-color: var(--bgn-accent-active) ;
   }
-  
-  /* Botão Start Using */
-  .VPButton.brand {
-    background-color: var(--bgn-accent);
-    color: var(--bgn-surface);
+
+  &:focus {
+    border-color: var(--border-color-focus);
   }
-  .VPButton.brand:hover {
-    color: var(--bgn-surface);
-    background: var(--bgn-accent-hover);
+}
+
+/* Botão GitHub */
+a.VPButton.medium.alt {
+  background-color: var(--bgn-surface);
+  color: var(--color-base) !important;
+
+  &:hover,
+  &:active {
+    background-color: var(--bgn-surface-hover);
+    color: var(--color-base-hover) !important;
   }
-  .VPButton.brand:active {
-    background: var(--bgn-accent-active);
+
+  &:focus:not(:active) {
+    border-color: var(--border-color-focus);
   }
-  .VPButton.brand:focus:not(:active) {
-    background-color: var(--bgn-accent);
-    border: var(--border-style-focus);
-    color: var(--bgn-surface);
-  }
+}
 
   /* Link Styles */
-  a {
+  strong a,
+  .vp-doc a,
+  .custom-block.info a{
     color: var(--color-base);
+    &:hover,
+    &:focus {
+      color: var(--color-link) !important;
+    }
+    &:active {
+      color: var(--color-link-active) !important;
+    }
+    &:visited {
+      color: var(--color-link-visited);
+    }
   }
-  a:hover,
-  a:focus,
-  a:visited:hover,
-  a:visited:focus {
-    color: var(--color-link);
-  }
-  a:active {
-    color: var(--color-link-active);
+  
+  a.outline-link {
+    color: var(--color-base) !important;
+    &:hover {
+      color: var(--color-base);
+    }
   }
 
-  .outline-link,
-  .outline-link:hover,
-  .outline-link:visited{
-    color: var(--color-base) !important; /* Cor do link de contorno */
-  }
-
-  .outline-link.active {
-    color:var(--color-accent) !important;
+  a.outline-link.active {
+    color: var(--color-accent) !important;
+    &:hover,
+    &:active {
+      color: var(--color-accent) !important;  
+    }
   }
 
   .outline-marker {
-    background: var(--color-accent); /* Cor do marcador de contorno */
+    background: var(--color-accent) !important; /* Cor do marcador de contorno */
   }
 
   /* Botão de pesquisa */
@@ -175,8 +187,30 @@
     font-weight: bold;
   }
   
-
   /* NavBar Styles - Não herda o estilo de link do tema */
+
+  a.VPLink.link.VPNavBarMenuLink.active span {
+    color: var(--color-accent) !important;
+  }
+
+  a.VPLink.link.active:hover span {
+    color: var(--color-accent) !important;
+  }
+
+  /* Links da NavBar */
+  a.VPLink.link span {
+    color: var(--color-base);
+  }
+
+  a.VPLink.link:hover{
+    color: var(--color-base) !important;
+  }
+
+  /* Link ativo de Toolkit */
+  a.VPLink.link.active span {
+    color: var(--color-accent);
+  }
+
   .VPNavBar.hover {
     color: var(--color-accent);
   }
@@ -199,7 +233,10 @@
     background: var(--bgn-surface-hover); /* cor do texto do link no menu ao passar o mouse */
   }
 
-  .VPNavBar a:hover,
+  .VPNavBarMenuLink span {
+    color: var(--color-base); /* cor do texto do link no menu */
+  }
+
   .VPNavBar a:focus,
   .VPNavBar a:visited,
   .VPNavBarMenuGroup .button:hover .text {
@@ -223,33 +260,39 @@
     color: var(--color-base) !important; /* Cor do texto do item do menu lateral */
   }
   
-  .VPSwitch:hover,
-  .VPSwitch:focus {
-    border-color: var(--color-accent); /* Borda do botão de alternância */
+  button.VPSwitch:hover,
+  button.VPSwitch:focus {
+    border-color: var(--color-accent) !important; /* Borda do botão de alternância */
+  }
+  
+  a.VPSocialLink.no-icon {
+    color: var(--color-base) !important; /* Cor dos links sociais */
   }
 
-  
-  .vpi-social-github{
-    color: var(--color-base); /* Cor dos links sociais */
+  /* Título na paginação */
+  .VPLink.link.pager-link .title{
+    color: var(--color-accent);
   }
 
   .pager .VPLink:hover,
   .pager .VPLink:focus {
     border-color: var(--color-accent); /* Borda do hover da paginação */
-
   }
 
-  .pager .title {
-    color: var(--color-accent); /* Cor do texto da paginação */
+  /* Hashtag Anchor */
+  a.header-anchor,
+  a.header-anchor.vp-doc{
+    &:visited {
+      color: var(--color-base) !important;
+    }
+    color: var(--color-base);
+    &:hover{
+      &:visited {
+        color: var(--color-accent) !important;
+      }
+      color: var(--color-accent) !important;
+    }
   }
-
-  .header-anchor:hover,
-  .header-anchor:focus,
-  .header-anchor:visited {
-    color: var(--color-accent);
-  }
-
-}
 
 /* Dark Mode */
 .dark {
