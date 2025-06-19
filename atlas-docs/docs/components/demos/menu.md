@@ -49,6 +49,6 @@ Visually separates groups of Menu Items for better organization.
 | :---- | :---- |
 | <kbd>Tab</kbd> | Moves focus between trigger and next focusable elements |
 | <kbd>Enter</kbd> / <kbd>Space</kbd> | Opens the Menu if the trigger is focused  |
-| <kbd>Arrow down</kbd> / <kbd>Arrow up<kbd> | Navigates between Menu Items |
+| <kbd>Arrow down</kbd> / <kbd>Arrow up</kbd> | Navigates between Menu Items |
 | <kbd>Esc</kbd> | Closes the Menu |
 | <kbd>Enter</kbd> | Selects the focused Menu Item |
