@@ -46,7 +46,7 @@ O tamanho é controlado por width/height e o resize pode ser desabilitado por pr
 		class:error={isError}
 		style="resize: {resizable ? resize : 'none'}; width: {width}px; height: {height}px;"
 		on:input={handleInput}
-	/>
+        ></textarea>
 </div>
 
 <style>

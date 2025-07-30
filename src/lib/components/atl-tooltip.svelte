@@ -95,8 +95,9 @@ Componente Tooltip:
 Envolve o elemento disparador (slot) e exibe a tooltip quando apropriado.
 O slot pode ser qualquer conteúdo (ícone, texto, etc).
 -->
-<div class="atl-tooltip" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
+<div class="atl-tooltip" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave} role="tooltip">
    <!-- Elemento disparador da tooltip -->
+    
    <div
 	   class="unstyled-button"
 	   bind:this={triggerEl}
